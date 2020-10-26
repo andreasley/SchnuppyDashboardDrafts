@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html style="height: auto; min-height: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Profil Maja Beispiel</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/font-awesome.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/AdminLTE.css">
+  <!-- Schnuppy Skin -->
+  <link rel="stylesheet" href="../assets/skin-schnuppy.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../assets/dataTables.bootstrap.min.css">
+
+
+
+  <link rel="stylesheet" href="../assets/css.css">
+<body class="skin-schnuppy sidebar-mini" style="height: auto; min-height: 100%;">
+<div class="wrapper" style="height: auto; min-height: 100%;">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="https://schnuppy.ch" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img class="sc-c-aspect-ratio-box__img" src="../assets/pen.svg"></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img class="sc-c-aspect-ratio-box__img" src="../assets/logo-white.svg" style="padding:10px;"></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">3</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>maja.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>nico.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>luca.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../assets/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">hanspeter.muster@schulewehntal.ch</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../assets/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Hanspeter Muster
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="profile.html" class="btn btn-default btn-flat">Profil bearbeiten</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Abmelden</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="../assets/school1.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Schule Wehntal</p>
+          <small>Sekundarschule Schmittenwis</small>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="search.html" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu tree" data-widget="tree">
+        <li>
+          <a href="dashboard.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="students.html">
+            <i class="fa fa-users"></i> <span>Schüler</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">3</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="applications.html">
+            <i class="fa fa-files-o"></i> <span>Bewerbungen</span>
+          </a>
+        </li>
+        <li>
+          <a href="trial-apprenticeships.html">
+            <i class="fa fa-calendar"></i> <span>Schnupperlehren</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 1865px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+	  <div class="header-student">
+		<img class="img-circle img-bordered-sm" src="../assets/user7-128x128.jpg" alt="User Image">
+		<h1>Maja Beispiel</h1>
+	    <a href="mailto:maja.beispiel@wehntal.schule">maja.beispiel@wehntal.schule</a>
+	  </div>						
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+    
+      <div class="row">
+        <div class="col-xs-12">
+			
+			<h3>Schnupperlehren</h3>
+              <table id="trialApprenticeshipsTable" class="table table-bordered table-striped box table-students" data-order='[[0, "desc"]]'>
+                <thead>
+                <tr>
+					<th>Datum</th>
+					<th>Typ</th>
+					<th data-orderable="false">Betrieb</th>
+					<th>Stelle</th>
+					<th>Status</th>
+					<th></th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-sort="2020-10-01">01.10.2020&nbsp;- 02.10.2020</small></td>
+                    <td>Schnupperlehre (2&nbsp;Tage)</td>
+                    <td>
+                    	<div><strong>Fake AG</strong></div>
+                    	<span>8162 Steinmaur</span>
+                    </td>
+                    <td data-sort="Systemgastronomiefachmann/-frau EFZ"><a href="publicJobDetailPage">Systemgastronomiefachmann/-frau EFZ</a></td>
+                    <td>Bevorstehend</td>
+                    <td><a href="trial-apprenticeship.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                  </tr>
+                  <tr>
+                    <td data-sort="2020-09-07">07.09.2020</td>
+                    <td>Schnupperbesuch</td>
+                    <td>
+                    	<div><strong>Firma GmbH</strong></div>
+                    	<span>8166 Niederweningen</span>
+                    </td>
+                    <td data-sort="Elektroinstallateur/in EFZ"><a href="publicJobDetailPage">Elektroinstallateur/in EFZ</a></td>
+                    <td>Erfolgreich abgeschlossen</td>
+                    <td><a href="trial-apprenticeship.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+
+    	</div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+      <div class="row">
+        <div class="col-xs-12">
+			
+			<h3>Bewerbungen</h3>
+              <table id="applicationsTable" class="table table-bordered table-striped box table-students" data-order='[[0, "desc"]]'>
+                <thead>
+                <tr>
+                    <th>Bewerbungsdatum</th>
+					<th data-orderable="false">Betrieb</th>
+                    <th>Stelle</th>
+                    <th>Status</th>
+                    <th data-orderable="false"></th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-sort="2020-09-30">30.09.2020</td>
+                    <td>
+                    	<div><strong>Testfirma GmbH</strong></div>
+                    	<span>8165 Dielsdorf</span>
+                    </td>
+                    <td data-sort="Elektroinstallateur/in EFZ"><a href="publicJobDetailPage">Elektroinstallateur/in EFZ</a></td>
+                    <td data-sort="waiting_on_company"><span class="label label-warning">Offen</span> <small>Warte auf Firma</small></td>
+                    <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
+                  </tr>
+                  <tr>
+                    <td data-sort="2020-09-28">28.09.2020</td>
+                    <td>
+                    	<div><strong>Fake AG</strong></div>
+                    	<span>8162 Steinmaur</span>
+                    </td>
+                    <td data-sort="Systemgastronomiefachmann/-frau EFZ"><a href="publicJobDetailPage">Systemgastronomiefachmann/-frau EFZ</a></td>
+                    <td data-sort="accepted"><span class="label label-success">Erfolgreich</span></td>
+                    <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
+                  </tr>
+                  <tr>
+                    <td data-sort="2020-09-23">23.09.2020</td>
+                    <td>
+                    	<div><strong>Testfirma GmbH</strong></div>
+                    	<span>8165 Dielsdorf</span>
+                    </td>
+                    <td data-sort="Elektroinstallateur/in EFZ"><a href="publicJobDetailPage">Elektroinstallateur/in EFZ</a></td>
+                    <td data-sort="rejected"><span class="label label-danger">Abgelehnt</span> <small>Keine Zeit</small></td>
+                    <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
+                  </tr>
+                </tbody>
+              </table>
+
+    	</div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+
+      <div class="row">
+        <div class="col-md-12">
+		  <h3>Profil</h3>
+    	</div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+
+      <div class="row">
+        <div class="col-md-6">
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Persönliche Angaben</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th></th>
+                    <td>
+                    	<span class="sc-c-icon sc-c-icon--female ">
+						<svg xmlns="http://www.w3.org/2000/svg" id="prefix__ic_female" width="13.53" height="30" viewBox="0 0 13.53 30">
+							<defs>
+								<style>
+									.prefix__cls-1{fill:#555}
+								</style>
+							</defs>
+							<path id="prefix__Path_1717" d="M75.791 58.647a3.824 3.824 0 1 1 3.824-3.824 3.828 3.828 0 0 1-3.824 3.824zm0-5.882a2.059 2.059 0 1 0 2.059 2.059 2.061 2.061 0 0 0-2.059-2.059z" class="prefix__cls-1" data-name="Path 1717" transform="translate(-69.025 -51)"></path>
+							<path id="prefix__Path_1718" d="M35.783 184.765a.883.883 0 0 1-.882-.882v-7.353h-2.059a.882.882 0 0 1-.842-1.137l3.529-11.765a.877.877 0 0 1 .845-.629h4.706a.877.877 0 0 1 .845.629l3.529 11.765a.882.882 0 0 1-.845 1.136h-2.061v7.353a.883.883 0 0 1-.882.882zm5-1.765v-7.353a.883.883 0 0 1 .882-.882h1.756l-3-10h-3.393l-3 10h1.755a.883.883 0 0 1 .882.882V183h1.176v-8.235h1.765V183z" class="prefix__cls-1" data-name="Path 1718" transform="translate(-31.959 -154.765)"></path>
+						</svg>
+						</span>
+					</td>
+                  </tr>
+                  <tr>
+                    <th>E-Mail</th>
+                    <td><a href="mailto:maja.beispiel@wehntal.schule">maja.beispiel@wehntal.schule</a></td>
+                  </tr>
+                  <tr>
+                    <th>Vorname</th>
+                    <td>Maja</td>
+                  </tr>
+                  <tr>
+                    <th>Name</th>
+                    <td>Beispiel</td>
+                  </tr>
+                  <tr>
+                    <th>Adresse</th>
+                    <td>
+                    	Hauptstrasse 123<br>
+                    	4567 Dorf
+                	</td>
+                  </tr>
+                  <tr>
+                    <th>Telefon Mobile</th>
+                    <td>079 123 45 67</td>
+                  </tr>
+                  <tr>
+                    <th>Telefon Festnetz</th>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th>Geburtsdatum</th>
+                    <td>03.01.2005</td>
+                  </tr>
+                  <tr>
+                    <th>Registrierungsdatum</th>
+                    <td>06.08.2020</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          
+    	</div>
+        <!-- /.col -->
+
+        <div class="col-md-6">
+
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Aktuelle Klassenzuweisung</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>Schule</th>
+                    <td>Schule Wehntal</td>
+                  </tr>
+                  <tr>
+                    <th>Schulhaus</th>
+                    <td>Sekundarschule Schmittenwis</td>
+                  </tr>
+                  <tr>
+                    <th>Lehrperson</th>
+                    <td>Hanspeter Muster<br>
+                    <a href="mailto:hanspeter.muster@schulewehntal.ch">hanspeter.muster@schulewehntal.ch</a></td>
+                  </tr>
+                  <tr>
+                    <th>Schulstufe</th>
+                    <td>Sek A</td>
+                  </tr>
+                  <tr>
+                    <th>Schuljahr</th>
+                    <td>2. Oberstufe</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          
+    	</div>
+        <!-- /.col -->
+
+      </div>
+      <!-- /.row -->
+
+
+      <div class="row">
+        <div class="col-md-12">
+
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Hinterlegte Dokumente</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+					<thead>
+					<tr>
+						<th style="width:10px;"></th>
+						<th>Dateiname</th>
+						<th>Typ</th>
+						<th>Beschreibung</th>
+						<th>Uploaddatum</th>
+					</tr>
+					</thead>
+                  <tbody>
+                  <tr>
+                    <td><i class="fa fa-file"></i></td>
+                    <td><a href="#">LL Maja 2020 v23.pdf</a></td>
+                    <td>Lebenslauf</td>
+                    <td>Oktober 2020 (neue Version)</td>
+                    <td>03.10.2020, 14:53</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+          
+    	</div>
+        <!-- /.col -->
+
+      </div>
+      <!-- /.row -->
+      
+      
+    <div class="row">
+        <div class="col-md-12">
+
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Erziehungsberechtigte</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+					<thead>
+					<tr>
+						<th>Vorname</th>
+						<th>Name</th>
+						<th>E-Mail</th>
+						<th>Telefon</th>
+					</tr>
+					</thead>
+                  <tbody>
+                  <tr>
+                    <td>Heinz</td>
+                    <td>Beispiel</td>
+                    <td>heinzb.62@bluewin.ch</td>
+                    <td>044 123 45 67</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          
+    	</div>
+        <!-- /.col -->
+
+      </div>
+      <!-- /.row -->
+
+    <div class="row">
+        <div class="col-md-12">
+
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Zuweisung zu Lehrperson / Klasse</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <p>Falls Maja Beispiel nicht in Ihrer Klasse ist, klicken Sie bitte nachfolgenden Knopf. Das Profil von Maja wird nicht gelöscht, aber beim nächsten Anmelden muss Maja eine neue Lehrperson auswählen.</p>
+				<a href="#" class="btn btn-sm btn-danger">Ich bin nicht Lehrperson von Maja Beispiel</a>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          
+    	</div>
+        <!-- /.col -->
+
+      </div>
+      <!-- /.row -->
+      
+      
+      
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../assets/jquery.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../assets/bootstrap.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/adminlte.js"></script>
+<!-- DataTables -->
+<script src="../assets/jquery.dataTables.min.js"></script>
+<script src="../assets/dataTables.bootstrap.min.js"></script>
+
+
+
+<!-- page script -->
+<script>
+  
+	var trialApprenticeshipsTable = $("#trialApprenticeshipsTable").DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		ordering: true,
+		info: false,
+		autoWidth: false,
+		columns: [
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+		]
+    })
+
+	var applicationsTable = $("#applicationsTable").DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		ordering: true,
+		info: false,
+		autoWidth: false,
+		columns: [
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+		]
+    })
+
+</script>
+
+</body>
+</html>

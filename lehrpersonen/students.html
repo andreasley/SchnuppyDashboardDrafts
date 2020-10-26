@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html style="height: auto; min-height: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Schüler</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/font-awesome.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/AdminLTE.css">
+  <!-- Schnuppy Skin -->
+  <link rel="stylesheet" href="../assets/skin-schnuppy.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../assets/dataTables.bootstrap.min.css">
+
+
+
+  <link rel="stylesheet" href="../assets/css.css">
+<body class="skin-schnuppy sidebar-mini" style="height: auto; min-height: 100%;">
+<div class="wrapper" style="height: auto; min-height: 100%;">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="https://schnuppy.ch" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img class="sc-c-aspect-ratio-box__img" src="../assets/pen.svg"></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img class="sc-c-aspect-ratio-box__img" src="../assets/logo-white.svg" style="padding:10px;"></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">3</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>maja.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>nico.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>luca.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../assets/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">hanspeter.muster@schulewehntal.ch</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../assets/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Hanspeter Muster
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="profile.html" class="btn btn-default btn-flat">Profil bearbeiten</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Abmelden</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="../assets/school1.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Schule Wehntal</p>
+          <small>Sekundarschule Schmittenwis</small>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="search.html" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu tree" data-widget="tree">
+        <li>
+          <a href="dashboard.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="students.html">
+            <i class="fa fa-users"></i> <span>Schüler</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">3</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="applications.html">
+            <i class="fa fa-files-o"></i> <span>Bewerbungen</span>
+          </a>
+        </li>
+        <li>
+          <a href="trial-apprenticeships.html">
+            <i class="fa fa-calendar"></i> <span>Schnupperlehren</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 1865px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+	  <button type="submit" class="btn btn-default pull-right hidden-xs"><i class="fa fa-download"></i> Download als CSV</button>
+      <h1>
+        Schüler
+      </h1>
+      <small>5 Einträge</small>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+    
+      <div class="row">
+        <div class="col-xs-12">
+              <table id="mainTable" class="table table-bordered table-striped box table-students" data-order='[[2, "desc"]]'>
+                <thead>
+                <tr>
+                  <th>Name</th>
+                  <th class="hidden-xs">E-Mail</th>
+                  <th>Zuweisung</th>
+                  <th>Bewerbungen</th>
+                  <th>Offen</th>
+                  <th>Zusagen</th>
+                  <th>Absagen</th>
+                  <th>Nächste Schnupperlehre</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td data-sort="Maja Beispiel">
+					  <a class="schnuppy-user-block" href="student.html">
+						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user7-128x128.jpg" alt="User Image">
+						<span class="username">Maja Beispiel</span>
+					  </a>						
+                  </td>
+                  <td class="hidden-xs">maja.beispiel@wehntal.schule</td>
+                  <td data-sort="2020-09-28">28.09.2020 <span class="label label-success">Neu</span></td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td data-sort="2020-10-01">01.10.2020</td>
+                </tr>
+                <tr>
+                  <td data-sort="Luca Beispiel">
+					  <a class="schnuppy-user-block" href="student.html">
+						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user1-128x128.jpg" alt="User Image">
+						<span class="username">Luca Beispiel</span>
+					  </a>						
+                  </td>
+                  <td class="hidden-xs">luca.beispiel@wehntal.schule</td>
+                  <td data-sort="2020-09-23">23.09.2020 <span class="label label-success">Neu</span></td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>keine</td>
+                </tr>
+                <tr>
+                  <td data-sort="Nico Beispiel">
+					  <a class="schnuppy-user-block" href="student.html">
+						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user5-128x128.jpg" alt="User Image">
+						<span class="username">Nico Beispiel</span>
+					  </a>						
+                  </td>
+                  <td class="hidden-xs">maja.beispiel@wehntal.schule</td>
+                  <td data-sort="2020-09-28">28.09.2020 <span class="label label-success">Neu</span></td>
+                  <td>2</td>
+                  <td>1</td>
+                  <td>1</td>
+                  <td>0</td>
+                  <td>keine</td>
+                </tr>
+                <tr>
+                  <td data-sort="Samuel Beispiel">
+					  <a class="schnuppy-user-block" href="student.html">
+						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user8-128x128.jpg" alt="User Image">
+						<span class="username">Samuel Beispiel</span>
+					  </a>						
+                  </td>
+                  <td class="hidden-xs">samuel.beispiel@wehntal.schule</td>
+                  <td data-sort="2020-09-03">03.09.2020</td>
+                  <td>5</td>
+                  <td>4</td>
+                  <td>0</td>
+                  <td>1</td>
+                  <td>keine</td>
+                </tr>
+                <tr>
+                  <td data-sort="Alexander Beispiel">
+					  <a class="schnuppy-user-block" href="student.html">
+						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user2-160x160.jpg" alt="User Image">
+						<span class="username">Alexander Beispiel</span>
+					  </a>						
+                  </td>
+                  <td class="hidden-xs">alexander.beispiel@wehntal.schule</td>
+                  <td data-sort="2020-08-17">17.08.2020</td>
+                  <td>13</td>
+                  <td>4</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>keine</td>
+                </tr>
+                </tbody>
+              </table>
+    	</div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+
+      
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../assets/jquery.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../assets/bootstrap.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/adminlte.js"></script>
+<!-- DataTables -->
+<script src="../assets/jquery.dataTables.min.js"></script>
+<script src="../assets/dataTables.bootstrap.min.js"></script>
+
+
+
+<!-- page script -->
+<script>
+  
+	var table = $("#mainTable").DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		ordering: true,
+		info: false,
+		autoWidth: false,
+		columns: [
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+		]
+    })
+</script>
+
+</body>
+</html>

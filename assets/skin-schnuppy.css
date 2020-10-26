@@ -1,0 +1,191 @@
+/*
+ * Skin: Blue
+ * ----------
+ */
+.skin-schnuppy .main-header .navbar {
+  background-color: #009DD2;
+}
+.skin-schnuppy .main-header .navbar .nav > li > a {
+  color: #ffffff;
+}
+.skin-schnuppy .main-header .navbar .nav > li > a:hover,
+.skin-schnuppy .main-header .navbar .nav > li > a:active,
+.skin-schnuppy .main-header .navbar .nav > li > a:focus,
+.skin-schnuppy .main-header .navbar .nav .open > a,
+.skin-schnuppy .main-header .navbar .nav .open > a:hover,
+.skin-schnuppy .main-header .navbar .nav .open > a:focus,
+.skin-schnuppy .main-header .navbar .nav > .active > a {
+  background: rgba(0, 0, 0, 0.1);
+  color: #f6f6f6;
+}
+.skin-schnuppy .main-header .navbar .sidebar-toggle {
+  color: #ffffff;
+}
+.skin-schnuppy .main-header .navbar .sidebar-toggle:hover {
+  color: #f6f6f6;
+  background: rgba(0, 0, 0, 0.1);
+}
+.skin-schnuppy .main-header .navbar .sidebar-toggle {
+  color: #fff;
+}
+.skin-schnuppy .main-header .navbar .sidebar-toggle:hover {
+  background-color: #009DD2;
+}
+@media (max-width: 767px) {
+  .skin-schnuppy .main-header .navbar .dropdown-menu li.divider {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  .skin-schnuppy .main-header .navbar .dropdown-menu li a {
+    color: #fff;
+  }
+  .skin-schnuppy .main-header .navbar .dropdown-menu li a:hover {
+    background: #009DD2;
+  }
+}
+.skin-schnuppy .main-header .logo {
+  background-color: #009DD2;
+  color: #ffffff;
+  border-bottom: 0 solid transparent;
+}
+.skin-schnuppy .main-header .logo:hover {
+  background-color: #357ca5;
+}
+.skin-schnuppy .main-header li.user-header {
+  background-color: #009DD2;
+}
+.skin-schnuppy .content-header {
+  background: transparent;
+}
+.skin-schnuppy .wrapper,
+.skin-schnuppy .main-sidebar,
+.skin-schnuppy .left-side {
+  background-color: #222d32;
+}
+.skin-schnuppy .user-panel > .info,
+.skin-schnuppy .user-panel > .info > a {
+  color: #fff;
+}
+.skin-schnuppy .sidebar-menu > li.header {
+  color: #4b646f;
+  background: #1a2226;
+}
+.skin-schnuppy .sidebar-menu > li > a {
+  border-left: 3px solid transparent;
+}
+.skin-schnuppy .sidebar-menu > li:hover > a,
+.skin-schnuppy .sidebar-menu > li.active > a,
+.skin-schnuppy .sidebar-menu > li.menu-open > a {
+  color: #ffffff;
+  background: #1e282c;
+}
+.skin-schnuppy .sidebar-menu > li.active > a {
+  border-left-color: #009DD2;
+}
+.skin-schnuppy .sidebar-menu > li > .treeview-menu {
+  margin: 0 1px;
+  background: #2c3b41;
+}
+.skin-schnuppy .sidebar a {
+  color: #b8c7ce;
+}
+.skin-schnuppy .sidebar a:hover {
+  text-decoration: none;
+}
+.skin-schnuppy .sidebar-menu .treeview-menu > li > a {
+  color: #8aa4af;
+}
+.skin-schnuppy .sidebar-menu .treeview-menu > li.active > a,
+.skin-schnuppy .sidebar-menu .treeview-menu > li > a:hover {
+  color: #ffffff;
+}
+.skin-schnuppy .sidebar-form {
+  border-radius: 3px;
+  border: 1px solid #374850;
+  margin: 10px 10px;
+}
+.skin-schnuppy .sidebar-form input[type="text"],
+.skin-schnuppy .sidebar-form .btn {
+  box-shadow: none;
+  background-color: #374850;
+  border: 1px solid transparent;
+  height: 35px;
+}
+.skin-schnuppy .sidebar-form input[type="text"] {
+  color: #666;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 2px;
+}
+.skin-schnuppy .sidebar-form input[type="text"]:focus,
+.skin-schnuppy .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  background-color: #fff;
+  color: #666;
+}
+.skin-schnuppy .sidebar-form input[type="text"]:focus + .input-group-btn .btn {
+  border-left-color: #fff;
+}
+.skin-schnuppy .sidebar-form .btn {
+  color: #999;
+  border-top-left-radius: 0;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+  border-bottom-left-radius: 0;
+}
+.skin-schnuppy.layout-top-nav .main-header > .logo {
+  background-color: #009DD2;
+  color: #ffffff;
+  border-bottom: 0 solid transparent;
+}
+.skin-schnuppy.layout-top-nav .main-header > .logo:hover {
+  background-color: #3b8ab8;
+}
+
+.skin-schnuppy .table td {
+  vertical-align: middle;
+}
+
+.skin-schnuppy .table-students .profile-picture img {
+	width: 40px;
+}
+
+.btn-schnuppy {
+    background-color: #009DD2;
+    border-color:#3b8ab8;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-schnuppy:hover, .btn-schnuppy:active, .btn-schnuppy.hover {
+    background-color:#3b8ab8;
+    color: white;
+}
+
+.schnuppy-user-block
+{
+	white-space: nowrap;
+}
+
+.schnuppy-user-block img {
+	width: 40px;
+	margin-right: 10px;
+}
+
+.schnuppy-user-block .username {
+	font-size: 16px;
+	font-weight: 600;
+	display: inline-block;
+	max-width: 200px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.header-student {
+	margin-bottom: 10px;	
+	overflow: auto;
+}
+
+.header-student img {
+	float: left;
+	margin-right: 20px;	
+}
