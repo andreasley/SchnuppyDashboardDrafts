@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html style="height: auto; min-height: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Schnuppy Dashboard Firma</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/font-awesome.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/AdminLTE.css">
+  <!-- Schnuppy Skin -->
+  <link rel="stylesheet" href="../assets/skin-schnuppy.css">
+
+  <link rel="stylesheet" href="../assets/css.css">
+<body class="skin-schnuppy sidebar-mini" style="height: auto; min-height: 100%;">
+<div class="wrapper" style="height: auto; min-height: 100%;">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="https://schnuppy.ch" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img class="sc-c-aspect-ratio-box__img" src="../assets/pen.svg"></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img class="sc-c-aspect-ratio-box__img" src="../assets/logo-white.svg" style="padding:10px;"></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">3</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="application.html">
+                      <i class="fa fa-user"></i> Neue Bewerbung<br/>
+                      <small>maja.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="application.html">
+                      <i class="fa fa-user"></i> Bewerbung zurückgezogen<br/>
+                      <small>nico.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Bewerbung<br/>
+                      <small>luca.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../assets/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">mitar.beiter@testfirma.ch</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../assets/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Mitar Beiter
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="profile.html" class="btn btn-default btn-flat">Profil bearbeiten</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Abmelden</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+      <!-- Sidebar user panel -->
+      <div class="user-panel company">
+        <div class="pull-left image">
+          <img src="../assets/company1-180x180.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Testfirma GmbH</p>
+          <small class="dropdown" data-toggle="dropdown" aria-expanded="false">Alle Standorte <span class="caret"></span></small>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Alle Standorte</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Hauptsitz</a></li>
+			<li><a href="#">Produktion</a></li>
+			<li><a href="#">Showroom</a></li>
+		  </ul>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="search.html" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu tree" data-widget="tree">
+        <li class="active">
+          <a href="dashboard.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="trial-apprenticeships.html">
+            <i class="fa fa-calendar"></i> <span>Schnupperlehren</span>
+          </a>
+        </li>
+        <li>
+          <a href="applications.html">
+            <i class="fa fa-files-o"></i> <span>Bewerbungen</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-yellow">2</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="vacancies.html">
+            <i class="fa fa-folder-open-o"></i> <span>Inserate</span>
+          </a>
+        </li>
+        <li class="header">EINSTELLUNGEN</li>
+        <li>
+          <a href="company-profile.html">
+            <i class="fa fa-sliders"></i> <span>Firmenprofil</span>
+          </a>
+        </li>
+        <li>
+          <a href="sites.html">
+            <i class="fa fa-building"></i> <span>Standorte</span>
+          </a>
+        </li>
+        <li>
+          <a href="employees.html">
+            <i class="fa fa-user"></i> <span>Mitarbeiter</span>
+          </a>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 1865px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h1>
+        Dashboard
+        <small>Firma</small>
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <div class="row">
+        <div class="col-md-12">
+          <!-- TABLE: NEXT TRIAL APPRENTICESHIPS -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Nächste Schnupperlehren/-besuche</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Datum / Typ</th>
+                    <th>Inserat</th>
+                    <th>Standort</th>
+                    <th>Ansprechsperson</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+					  <a class="schnuppy-user-block" href="student.html">
+						<img class="img-circle img-bordered-sm" src="../assets/user1-128x128.jpg" alt="User Image">
+						<span class="username">Samuel Beispiel</span>
+					  </a>						
+                    </td>
+                    <td>01.10.2020 - 02.10.2020<br><small>Schnupperlehre (2 Tage)</small></td>
+                    <td><a href="vacancy.html">Systemgastronomiefachmann/-frau EFZ</a></td>
+                    <td>Hauptsitz</td>
+                    <td>Fritz Glauser</td>
+                    <td><a href="trial-apprenticeship.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+          
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <a href="trial-apprenticeships.html" class="btn btn-sm btn-default btn-flat pull-right">Alle Schnupperlehren anzeigen</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+      
+     <div class="row">
+        <div class="col-md-12">
+          <!-- TABLE: LATEST APPLICATIONS -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Offene Bewerbungen</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Bewerbungsdatum</th>
+                    <th>Standort</th>
+                    <th>Inserat</th>
+                    <th>Status</th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td>
+					  <a class="schnuppy-user-block" href="student.html">
+						<img class="img-circle img-bordered-sm" src="../assets/user7-128x128.jpg" alt="User Image">
+						<span class="username">Maja Beispiel</span>
+					  </a>						
+                    </td>
+                    <td>30.09.2020</td>
+                    <td>Produktion</td>
+                    <td><a href="publicJobDetailPage">Informatiker/in EFZ</a></td>
+                    <td><span class="label label-warning">Offen</span> <small>Warte auf Firma</small></td>
+                    <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+					  <a class="schnuppy-user-block" href="student.html">
+						<img class="img-circle img-bordered-sm" src="../assets/user5-128x128.jpg" alt="User Image">
+						<span class="username">Nico Beispiel</span>
+					  </a>						
+                    </td>
+                    <td>28.09.2020</td>
+                    <td>Showroom</td>
+                    <td><a href="publicJobDetailPage">Kaufmann/-frau EFZ Bank</a></td>
+                    <td><span class="label label-warning">Offen</span> <small>Warte auf Jugendliche(n)</small></td>
+                    <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+          
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <a href="applications.html" class="btn btn-sm btn-default btn-flat pull-right">Alle Bewerbungen anzeigen</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+     <div class="row">
+        <div class="col-md-12">
+          <!-- TABLE: VACANCIES -->
+          <div class="box box-info">
+            <div class="box-header with-border">
+              <h3 class="box-title">Veröffentlichte Inserate</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin vacancies">
+                  <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Standort</th>
+                    <th>
+                    	Verfügbarkeit
+						<div class="vacancy-timeline-header">
+							<div class="sc-c-timeline__header-right">
+								<div class="sc-c-timeline__months">
+									<span class="sc-c-timeline__month" style="flex-basis: 8.4692%"> Aug </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.196%"> Sep </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.4692%"> Oct </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.196%">Nov</span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.4692%"> Dec </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.4692%"> Jan </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 7.6496%"> Feb </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.4692%"> Mar </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.196%"> Apr </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.4692%"> May </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.196%"> Jun </span>
+									<span class="sc-c-timeline__month" style="flex-basis: 8.4692%"> Jul </span> 
+								</div>
+							</div>
+						</div>
+                    </th>
+                    <th></th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr>
+                    <td width="1%">
+					  <a class="schnuppy-user-block" href="vacancy.html">Systemgastronomiefachmann/-frau EFZ</a>						
+                    </td>
+                    <td width="1%">Hauptsitz</td>
+                    <td style="position: relative;">
+                    	<div class="sc-c-timeline-list__today-line" style="left: 31%"></div>
+						<div class="vacancy-timeline">
+							<div class="sc-c-timeline__month-tiles">
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(7.6496%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span> 
+							</div>
+							<div class="sc-c-timeline__vacancies">
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 18.518518518519%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 20.37037037037%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 22.222222222222%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 24.074074074074%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius " style="width: 1.8518518518519%; left: 9.2592592592593%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red  sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 11.111111111111%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius " style="width: 1.8518518518519%; left: 14.814814814815%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 16.666666666667%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 25.925925925926%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--yellow sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 27.777777777778%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 29.62962962963%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 31.481481481481%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--yellow sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 33.333333333333%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--yellow sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 35.185185185185%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 37.037037037037%"></span>
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red  sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 38.888888888889%"></span> 
+							</div>
+						</div>
+                    </td>
+                    <td width="1%"><a href="vacancy.html" class="btn btn-sm btn-default pull-right">Inserat anzeigen</a></td>
+                  </tr>
+                  <tr>
+                    <td width="1%">
+					  <a class="schnuppy-user-block" href="vacancy.html">Kaufmann/-frau EFZ Bank</a>						
+                    </td>
+                    <td width="1%">Showroom</td>
+                    <td style="position: relative;">
+                    	<div class="sc-c-timeline-list__today-line" style="left: 31%"></div>
+						<div class="vacancy-timeline">
+							<div class="sc-c-timeline__month-tiles">
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(7.6496%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span> 
+							</div>
+							<div class="sc-c-timeline__vacancies">	
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius " style="width: 1.8518518518519%; left: 16.666666666667%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 18.518518518519%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 20.37037037037%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius " style="width: 1.8518518518519%; left: 9.2592592592593%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 11.111111111111%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red  sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 12.962962962963%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red  " style="width: 1.8518518518519%; left: 3.7037037037037%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 33.333333333333%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 35.185185185185%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 37.037037037037%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green  sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 38.888888888889%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 22.222222222222%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 24.074074074074%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 25.925925925926%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--yellow sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 27.777777777778%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 29.62962962963%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 31.481481481481%"></span> 
+							</div>
+						</div>
+                    </td>
+                    <td width="1%"><a href="vacancy.html" class="btn btn-sm btn-default pull-right">Inserat anzeigen</a></td>
+                  </tr>
+                  <tr>
+                    <td width="1%">
+					  <a class="schnuppy-user-block" href="vacancy.html">Informatiker/in EFZ</a>						
+                    </td>
+                    <td width="1%">Produktion</td>
+                    <td style="position: relative;">
+                    	<div class="sc-c-timeline-list__today-line" style="left: 31%"></div>
+						<div class="vacancy-timeline">
+							<div class="sc-c-timeline__month-tiles">
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(7.6496%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.196%)"></span>
+								<span class="sc-c-timeline__month" style="flex-basis: calc(8.4692%)"></span> 
+							</div>
+							<div class="sc-c-timeline__vacancies">	
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 9.2592592592593%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 11.111111111111%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red  sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 12.962962962963%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 3.7037037037037%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 5.5555555555556%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 7.4074074074074%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius " style="width: 1.8518518518519%; left: 1.8518518518519%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius " style="width: 1.8518518518519%; left: 18.518518518519%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 20.37037037037%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 22.222222222222%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 24.074074074074%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red  sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 25.925925925926%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius " style="width: 1.8518518518519%; left: 33.333333333333%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 35.185185185185%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red sc-c-timeline__vacancy--no-right-radius sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 37.037037037037%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--red  sc-c-timeline__vacancy--no-left-radius" style="width: 1.8518518518519%; left: 38.888888888889%"></span> 
+								<span class="sc-c-timeline__vacancy sc-c-timeline__vacancy--green  " style="width: 1.8518518518519%; left: 29.62962962963%"></span> 
+							</div>
+						</div>
+                    </td>
+                    <td width="1%"><a href="vacancy.html" class="btn btn-sm btn-default pull-right">Inserat anzeigen</a></td>
+                  </tr>
+
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+          
+            <!-- /.box-body -->
+            <div class="box-footer clearfix">
+              <a href="vacancies.html" class="btn btn-sm btn-default btn-flat pull-right">Alle Inserate anzeigen</a>
+            </div>
+            <!-- /.box-footer -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../assets/jquery.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../assets/bootstrap.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/adminlte.js"></script>
+
+</body>
+</html>

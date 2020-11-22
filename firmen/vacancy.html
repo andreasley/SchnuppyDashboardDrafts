@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html style="height: auto; min-height: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Inserat Elektroinstallateur/in EFZ an Standort Produktion</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/font-awesome.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../assets/select2.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/AdminLTE.css">
+  <!-- Schnuppy Skin -->
+  <link rel="stylesheet" href="../assets/skin-schnuppy.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../assets/dataTables.bootstrap.min.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="../assets/bootstrap3-wysihtml5.min.css">
+
+
+
+  <link rel="stylesheet" href="../assets/css.css">
+<body class="skin-schnuppy sidebar-mini vacancy-detail" style="height: auto; min-height: 100%;">
+<div class="wrapper" style="height: auto; min-height: 100%;">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="https://schnuppy.ch" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img class="sc-c-aspect-ratio-box__img" src="../assets/pen.svg"></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img class="sc-c-aspect-ratio-box__img" src="../assets/logo-white.svg" style="padding:10px;"></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">3</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="application.html">
+                      <i class="fa fa-user"></i> Neue Bewerbung<br/>
+                      <small>maja.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="application.html">
+                      <i class="fa fa-user"></i> Bewerbung zurückgezogen<br/>
+                      <small>nico.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Bewerbung<br/>
+                      <small>luca.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../assets/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">mitar.beiter@testfirma.ch</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../assets/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Mitar Beiter
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="profile.html" class="btn btn-default btn-flat">Profil bearbeiten</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Abmelden</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+      <!-- Sidebar user panel -->
+      <div class="user-panel company">
+        <div class="pull-left image">
+          <img src="../assets/company1-180x180.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Testfirma GmbH</p>
+          <small class="dropdown" data-toggle="dropdown" aria-expanded="false">Alle Standorte <span class="caret"></span></small>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Alle Standorte</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Hauptsitz</a></li>
+			<li><a href="#">Produktion</a></li>
+			<li><a href="#">Showroom</a></li>
+		  </ul>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="search.html" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu tree" data-widget="tree">
+        <li>
+          <a href="dashboard.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="trial-apprenticeships.html">
+            <i class="fa fa-calendar"></i> <span>Schnupperlehren</span>
+          </a>
+        </li>
+        <li>
+          <a href="applications.html">
+            <i class="fa fa-files-o"></i> <span>Bewerbungen</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-yellow">2</small>
+            </span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="vacancies.html">
+            <i class="fa fa-folder-open-o"></i> <span>Inserate</span>
+          </a>
+        </li>
+        <li class="header">EINSTELLUNGEN</li>
+        <li>
+          <a href="company-profile.html">
+            <i class="fa fa-sliders"></i> <span>Firmenprofil</span>
+          </a>
+        </li>
+        <li>
+          <a href="sites.html">
+            <i class="fa fa-building"></i> <span>Standorte</span>
+          </a>
+        </li>
+        <li>
+          <a href="employees.html">
+            <i class="fa fa-user"></i> <span>Mitarbeiter</span>
+          </a>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 1865px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+    	<h1>Inserat</h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+      <div class="row">
+        <div class="col-md-6">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Grunddaten</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+
+				<form class="form-horizontal">
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Veröffentlichung</label>
+					  <div class="col-sm-8">
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox" checked="checked"> Inserat ist für Bewerbende sichtbar
+						  </label>
+						</div>
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Standort</label>
+					  <div class="col-sm-8">
+						  <select class="form-control" id="location">
+							<option></option>
+							<option selected="selected">Hauptsitz</option>
+							<option>Produktion</option>
+							<option>Showroom</option>
+						  </select>
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Standort</label>
+					  <div class="col-sm-8">
+						  <select class="form-control" id="location">
+							<option></option>
+							<option selected="selected">Hauptsitz</option>
+							<option>Produktion</option>
+							<option>Showroom</option>
+						  </select>
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Ansprechsperson</label>
+					  <div class="col-sm-8">
+						<select class="form-control" id="employee">
+						  <option selected="selected">Mitar Beiter</option>
+						  <option>Hugh Scheff</option>
+						  <option>Roland Untertaner</option>
+						</select>
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Beruf</label>
+					  <div class="col-sm-8 .select2-container--default">
+						<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" aria-hidden="true">
+						  <option></option>
+						  <option>Abdichter/in EFZ</option>
+						  <option selected="selected">Abdichtungspraktiker/in EBA</option>
+						  <option>Agrarpraktiker/in EBA</option>
+						  <option>Anlagen- und Apparatebauer/in EFZ</option>
+						  <option>Anlagenführer/in EFZ</option>
+						  <option>Apparateglasbläser/in EFZ</option>
+						  <option>Architekturmodellbauer/in EFZ</option>
+						  <option>Assistent/in Gesundheit und Soziales EBA</option>
+						  <option>Augenoptiker/in EFZ</option>
+						  <option>Automatiker/in EFZ</option>
+						  <option>Automatikmonteur/in EFZ</option>
+						  <option>Automobil-Assistent/in EBA</option>
+						  <option>Automobil-Fachmann/-frau EFZ</option>
+						  <option>Automobil-Mechatroniker/in EFZ</option>
+						</select>
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Schnuppertypen</label>
+					  <div class="col-sm-8">
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Schnupperbesuch (1 Tag)
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Schnupperlehre (2 Tage)
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Schnupperlehre (3 Tage)
+						  </label>
+						</div>
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Weitere Informationen</label>
+					  <div class="col-sm-8">
+						  <textarea class="form-control wysiwyg" rows="6" name="description"></textarea>
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="automatically_reject_after" class="col-sm-4 control-label">Automatische Ablehnung</label>
+					  <div class="col-sm-8">
+						<div class="input-group">
+						  <input class="form-control" type="text" name="automatically_reject_after" value="5">
+						  <span class="input-group-addon">Tage</span>
+						</div>
+						<small>Von Ihnen nicht beantwortete Bewerbungen werden nach dieser Anzahl Tage automatisch abgelehnt.</small>
+					  </div>
+					</div>
+
+				</form>
+
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+        <div class="col-md-6">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Anforderungen an Bewerbende</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+
+				<form class="form-horizontal">
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Erforderliche Unterlagen</label>
+					  <div class="col-sm-8">
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Motivationsschreiben
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Lebenslauf
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Zeugnisse
+						  </label>
+						</div>
+					  </div>
+					</div>
+				</form>
+			
+            
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Einschränkungen</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+
+				<form class="form-horizontal">
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Umkreis</label>
+					  <div class="col-sm-8">
+					    <div class="input-group">
+              			  <input class="form-control" type="text" name="search_radius" value="5">
+						  <span class="input-group-addon">Kilometer</span>
+						</div>
+						<small>Das Inserat wird nur Jugendlichen angezeigt, die innerhalb dieser Distanz zum Standort wohnen.</small>
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label"></label>
+					  <div class="col-sm-8">
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Nur für Jugendliche im letzten Schuljahr
+						  </label>
+						</div>
+					  </div>
+					</div>
+
+				</form>
+			
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
+
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Informationstag</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+
+				<form class="form-horizontal">
+					<div class="form-group">
+					  <label for="information_day_details" class="col-sm-4 control-label">Details</label>
+					  <div class="col-sm-8">
+						  <textarea class="form-control wysiwyg" rows="3" name="information_day_details"></textarea>
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="information_day_website" class="col-sm-4 control-label">Webseite</label>
+					  <div class="col-sm-8">
+						<div class="input-group">
+							<span class="input-group-addon">http://</span>
+							<input class="form-control" type="text" name="information_day_website" placeholder="">
+						</div>
+					  </div>
+					</div>
+
+				</form>
+			
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+      </div>
+	  <!-- ./row -->
+
+
+
+      <div class="row">
+        <div class="col-md-12">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Verfügbarkeit</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+
+				<div class="calendar-container">
+					<section class="calendar calendar--3-columns calendar--inlined">
+						<div class="calendar__inner">
+							<div class="calendar__toolbar">
+								<button type="button" class="calendar__previous-action"></button><button type="button" class="calendar__next-action"></button>
+							</div>
+							<div class="calendar__months">
+								<section class="calendar__month">
+									<header class="calendar__month-title-bar">
+										<div class="calendar__month-title">
+											<div class="calendar__select calendar__header-month">November</div>
+											<div class="calendar__select calendar__header-month">2020</div>
+										</div>
+										<div class="sc-c-calendar__legend sc-c-calendar__legend--inline" data-open="legendModal">
+											<span class="sc-c-icon sc-c-icon--info sc-c-icon-legend"> <svg xmlns="http://www.w3.org/2000/svg" id="prefix__ic_info" width="23.625" height="23.625" viewbox="0 0 23.625 23.625"> <path id="prefix__Path_1278" d="M11.812 0a11.813 11.813 0 1 0 11.813 11.812A11.813 11.813 0 0 0 11.812 0zm2.459 18.307q-.912.36-1.455.548a3.838 3.838 0 0 1-1.262.189 2.515 2.515 0 0 1-1.717-.544 1.739 1.739 0 0 1-.611-1.367 4.966 4.966 0 0 1 .045-.659c.031-.224.08-.476.147-.759l.761-2.688c.067-.258.125-.5.171-.731a3.241 3.241 0 0 0 .068-.633.975.975 0 0 0-.212-.717 1.2 1.2 0 0 0-.813-.2 2.134 2.134 0 0 0-.605.09c-.2.063-.383.12-.529.176l.2-.828q.747-.3 1.43-.521a4.225 4.225 0 0 1 1.29-.218 2.468 2.468 0 0 1 1.692.53 1.761 1.761 0 0 1 .594 1.376q0 .175-.041.617a4.129 4.129 0 0 1-.152.811l-.757 2.68c-.062.215-.117.461-.167.736a3.892 3.892 0 0 0-.073.626.9.9 0 0 0 .239.728 1.338 1.338 0 0 0 .827.194 2.4 2.4 0 0 0 .626-.1 3.559 3.559 0 0 0 .506-.17zm-.134-10.878a1.807 1.807 0 0 1-1.275.492 1.826 1.826 0 0 1-1.28-.492 1.571 1.571 0 0 1-.533-1.193 1.586 1.586 0 0 1 .533-1.2 1.812 1.812 0 0 1 1.28-.5 1.792 1.792 0 0 1 1.275.5 1.611 1.611 0 0 1 0 2.389z" data-name="Path 1278" style="fill:#fff"></path> </svg>  </span> 
+										</div>
+										<div class="calendar__toolbar">
+											<button type="button" class="calendar__previous-action"></button><button type="button" class="calendar__next-action"></button>
+										</div>
+									</header>
+									<div class="calendar__days-of-the-week">
+										<div class="calendar__day-of-the-week " title="Montag">Mo</div>
+										<div class="calendar__day-of-the-week " title="Dienstag">Di</div>
+										<div class="calendar__day-of-the-week " title="Mittwoch">Mi</div>
+										<div class="calendar__day-of-the-week " title="Donnerstag">Do</div>
+										<div class="calendar__day-of-the-week " title="Freitag">Fr</div>
+										<div class="calendar__day-of-the-week calendar__day-weekend" title="Samstag">Sa</div>
+										<div class="calendar__day-of-the-week calendar__day-weekend" title="Sonntag">So</div>
+									</div>
+									<div class="calendar__days">
+										<div class="calendar__day is-previous-month calendar__day--red calendar__day--start is-disabled" data-time="1603718676692">26</div>
+										<div class="calendar__day is-previous-month calendar__day--red is-disabled" data-time="1603805076692">27</div>
+										<div class="calendar__day is-previous-month calendar__day--red is-disabled" data-time="1603891476692">28</div>
+										<div class="calendar__day is-previous-month calendar__day--red is-disabled" data-time="1603977876692">29</div>
+										<div class="calendar__day is-previous-month calendar__day--red calendar__day--end is-disabled" data-time="1604064276692">30</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day is-previous-month is-disabled is-weekend" data-time="1604150676692">31</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1604237076692">1</div>
+										</div>
+										<div class="calendar__day  is-disabled" data-time="1604323476692">2</div>
+										<div class="calendar__day  is-disabled" data-time="1604409876692">3</div>
+										<div class="calendar__day  calendar__day--red calendar__day--start is-disabled" data-time="1604496276692">4</div>
+										<div class="calendar__day  calendar__day--red is-disabled" data-time="1604582676692">5</div>
+										<div class="calendar__day  calendar__day--red calendar__day--end is-disabled" data-time="1604669076692">6</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1604755476692">7</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1604841876692">8</div>
+										</div>
+										<div class="calendar__day  calendar__day--red calendar__day--start is-disabled" data-time="1604928276692">9</div>
+										<div class="calendar__day  calendar__day--red calendar__day--end is-disabled is-today" data-time="1605014676692">10</div>
+										<div class="calendar__day is-available  calendar__day--green calendar__day--start" data-time="1605101076692">11</div>
+										<div class="calendar__day is-available  calendar__day--green" data-time="1605187476692">12</div>
+										<div class="calendar__day is-available  calendar__day--green calendar__day--end" data-time="1605273876692">13</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1605360276692">14</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1605446676692">15</div>
+										</div>
+										<div class="calendar__day is-available  calendar__day--green calendar__day--start" data-time="1605533076692">16</div>
+										<div class="calendar__day is-available  calendar__day--green" data-time="1605619476692">17</div>
+										<div class="calendar__day is-available  calendar__day--green" data-time="1605705876692">18</div>
+										<div class="calendar__day is-available  calendar__day--green" data-time="1605792276692">19</div>
+										<div class="calendar__day is-available  calendar__day--green calendar__day--end" data-time="1605878676692">20</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1605965076692">21</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1606051476692">22</div>
+										</div>
+										<div class="calendar__day is-available  calendar__day--green calendar__day--start" data-time="1606137876692">23</div>
+										<div class="calendar__day is-available  calendar__day--green" data-time="1606224276692">24</div>
+										<div class="calendar__day is-available  calendar__day--green" data-time="1606310676692">25</div>
+										<div class="calendar__day is-available  calendar__day--green" data-time="1606397076692">26</div>
+										<div class="calendar__day is-available  calendar__day--green calendar__day--end" data-time="1606483476692">27</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1606569876692">28</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1606656276692">29</div>
+										</div>
+										<div class="calendar__day  is-disabled" data-time="1606742676692">30</div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</section>
+								<section class="calendar__month">
+									<header class="calendar__month-title-bar">
+										<div class="calendar__month-title">
+											<div class="calendar__select calendar__header-month">Dezember</div>
+											<div class="calendar__select calendar__header-month">2020</div>
+										</div>
+										<div class="sc-c-calendar__legend sc-c-calendar__legend--inline" data-open="legendModal">
+											<span class="sc-c-icon sc-c-icon--info sc-c-icon-legend"> <svg xmlns="http://www.w3.org/2000/svg" id="prefix__ic_info" width="23.625" height="23.625" viewbox="0 0 23.625 23.625"> <path id="prefix__Path_1278" d="M11.812 0a11.813 11.813 0 1 0 11.813 11.812A11.813 11.813 0 0 0 11.812 0zm2.459 18.307q-.912.36-1.455.548a3.838 3.838 0 0 1-1.262.189 2.515 2.515 0 0 1-1.717-.544 1.739 1.739 0 0 1-.611-1.367 4.966 4.966 0 0 1 .045-.659c.031-.224.08-.476.147-.759l.761-2.688c.067-.258.125-.5.171-.731a3.241 3.241 0 0 0 .068-.633.975.975 0 0 0-.212-.717 1.2 1.2 0 0 0-.813-.2 2.134 2.134 0 0 0-.605.09c-.2.063-.383.12-.529.176l.2-.828q.747-.3 1.43-.521a4.225 4.225 0 0 1 1.29-.218 2.468 2.468 0 0 1 1.692.53 1.761 1.761 0 0 1 .594 1.376q0 .175-.041.617a4.129 4.129 0 0 1-.152.811l-.757 2.68c-.062.215-.117.461-.167.736a3.892 3.892 0 0 0-.073.626.9.9 0 0 0 .239.728 1.338 1.338 0 0 0 .827.194 2.4 2.4 0 0 0 .626-.1 3.559 3.559 0 0 0 .506-.17zm-.134-10.878a1.807 1.807 0 0 1-1.275.492 1.826 1.826 0 0 1-1.28-.492 1.571 1.571 0 0 1-.533-1.193 1.586 1.586 0 0 1 .533-1.2 1.812 1.812 0 0 1 1.28-.5 1.792 1.792 0 0 1 1.275.5 1.611 1.611 0 0 1 0 2.389z" data-name="Path 1278" style="fill:#fff"></path> </svg>  </span> 
+										</div>
+										<div class="calendar__toolbar">
+											<button type="button" class="calendar__previous-action"></button><button type="button" class="calendar__next-action"></button>
+										</div>
+									</header>
+									<div class="calendar__days-of-the-week">
+										<div class="calendar__day-of-the-week " title="Montag">Mo</div>
+										<div class="calendar__day-of-the-week " title="Dienstag">Di</div>
+										<div class="calendar__day-of-the-week " title="Mittwoch">Mi</div>
+										<div class="calendar__day-of-the-week " title="Donnerstag">Do</div>
+										<div class="calendar__day-of-the-week " title="Freitag">Fr</div>
+										<div class="calendar__day-of-the-week calendar__day-weekend" title="Samstag">Sa</div>
+										<div class="calendar__day-of-the-week calendar__day-weekend" title="Sonntag">So</div>
+									</div>
+									<div class="calendar__days">
+										<div></div>
+										<div class="calendar__day  is-disabled" data-time="1606829076692">1</div>
+										<div class="calendar__day  is-disabled" data-time="1606915476692">2</div>
+										<div class="calendar__day is-available  calendar__day--yellow calendar__day--start" data-time="1607001876692">3</div>
+										<div class="calendar__day is-available  calendar__day--yellow calendar__day--end" data-time="1607088276692">4</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1607174676692">5</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1607261076692">6</div>
+										</div>
+										<div class="calendar__day is-available  calendar__day--yellow calendar__day--start" data-time="1607347476692">7</div>
+										<div class="calendar__day is-available  calendar__day--yellow" data-time="1607433876692">8</div>
+										<div class="calendar__day is-available  calendar__day--yellow" data-time="1607520276692">9</div>
+										<div class="calendar__day is-available  calendar__day--yellow" data-time="1607606676692">10</div>
+										<div class="calendar__day is-available  calendar__day--yellow calendar__day--end" data-time="1607693076692">11</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1607779476692">12</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1607865876692">13</div>
+										</div>
+										<div class="calendar__day  is-disabled" data-time="1607952276692">14</div>
+										<div class="calendar__day  calendar__day--red calendar__day--start is-disabled" data-time="1608038676692">15</div>
+										<div class="calendar__day  calendar__day--red is-disabled" data-time="1608125076692">16</div>
+										<div class="calendar__day  calendar__day--red is-disabled" data-time="1608211476692">17</div>
+										<div class="calendar__day  calendar__day--red calendar__day--end is-disabled" data-time="1608297876692">18</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1608384276692">19</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1608470676692">20</div>
+										</div>
+										<div class="calendar__day  calendar__day--red calendar__day--start is-disabled" data-time="1608557076692">21</div>
+										<div class="calendar__day  calendar__day--red is-disabled" data-time="1608643476692">22</div>
+										<div class="calendar__day  calendar__day--red is-disabled" data-time="1608729876692">23</div>
+										<div class="calendar__day  calendar__day--red is-disabled" data-time="1608816276692">24</div>
+										<div class="calendar__day  calendar__day--red calendar__day--end is-disabled" data-time="1608902676692">25</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1608989076692">26</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1609075476692">27</div>
+										</div>
+										<div class="calendar__day  is-disabled" data-time="1609161876692">28</div>
+										<div class="calendar__day  is-disabled" data-time="1609248276692">29</div>
+										<div class="calendar__day  is-disabled" data-time="1609334676692">30</div>
+										<div class="calendar__day  is-disabled" data-time="1609421076692">31</div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</section>
+								<section class="calendar__month">
+									<header class="calendar__month-title-bar">
+										<div class="calendar__month-title">
+											<div class="calendar__select calendar__header-month">Januar</div>
+											<div class="calendar__select calendar__header-month">2021</div>
+										</div>
+										<div class="sc-c-calendar__legend sc-c-calendar__legend--inline" data-open="legendModal">
+											<span class="sc-c-icon sc-c-icon--info sc-c-icon-legend"> <svg xmlns="http://www.w3.org/2000/svg" id="prefix__ic_info" width="23.625" height="23.625" viewbox="0 0 23.625 23.625"> <path id="prefix__Path_1278" d="M11.812 0a11.813 11.813 0 1 0 11.813 11.812A11.813 11.813 0 0 0 11.812 0zm2.459 18.307q-.912.36-1.455.548a3.838 3.838 0 0 1-1.262.189 2.515 2.515 0 0 1-1.717-.544 1.739 1.739 0 0 1-.611-1.367 4.966 4.966 0 0 1 .045-.659c.031-.224.08-.476.147-.759l.761-2.688c.067-.258.125-.5.171-.731a3.241 3.241 0 0 0 .068-.633.975.975 0 0 0-.212-.717 1.2 1.2 0 0 0-.813-.2 2.134 2.134 0 0 0-.605.09c-.2.063-.383.12-.529.176l.2-.828q.747-.3 1.43-.521a4.225 4.225 0 0 1 1.29-.218 2.468 2.468 0 0 1 1.692.53 1.761 1.761 0 0 1 .594 1.376q0 .175-.041.617a4.129 4.129 0 0 1-.152.811l-.757 2.68c-.062.215-.117.461-.167.736a3.892 3.892 0 0 0-.073.626.9.9 0 0 0 .239.728 1.338 1.338 0 0 0 .827.194 2.4 2.4 0 0 0 .626-.1 3.559 3.559 0 0 0 .506-.17zm-.134-10.878a1.807 1.807 0 0 1-1.275.492 1.826 1.826 0 0 1-1.28-.492 1.571 1.571 0 0 1-.533-1.193 1.586 1.586 0 0 1 .533-1.2 1.812 1.812 0 0 1 1.28-.5 1.792 1.792 0 0 1 1.275.5 1.611 1.611 0 0 1 0 2.389z" data-name="Path 1278" style="fill:#fff"></path> </svg>  </span> 
+										</div>
+										<div class="calendar__toolbar">
+											<button type="button" class="calendar__previous-action"></button><button type="button" class="calendar__next-action"></button>
+										</div>
+									</header>
+									<div class="calendar__days-of-the-week">
+										<div class="calendar__day-of-the-week " title="Montag">Mo</div>
+										<div class="calendar__day-of-the-week " title="Dienstag">Di</div>
+										<div class="calendar__day-of-the-week " title="Mittwoch">Mi</div>
+										<div class="calendar__day-of-the-week " title="Donnerstag">Do</div>
+										<div class="calendar__day-of-the-week " title="Freitag">Fr</div>
+										<div class="calendar__day-of-the-week calendar__day-weekend" title="Samstag">Sa</div>
+										<div class="calendar__day-of-the-week calendar__day-weekend" title="Sonntag">So</div>
+									</div>
+									<div class="calendar__days">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div class="calendar__day  is-disabled" data-time="1609507476692">1</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1609593876692">2</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1609680276692">3</div>
+										</div>
+										<div class="calendar__day  is-disabled" data-time="1609766676692">4</div>
+										<div class="calendar__day  is-disabled" data-time="1609853076692">5</div>
+										<div class="calendar__day  is-disabled" data-time="1609939476692">6</div>
+										<div class="calendar__day  is-disabled" data-time="1610025876692">7</div>
+										<div class="calendar__day  is-disabled" data-time="1610112276692">8</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1610198676692">9</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1610285076692">10</div>
+										</div>
+										<div class="calendar__day  is-disabled" data-time="1610371476692">11</div>
+										<div class="calendar__day  is-disabled" data-time="1610457876692">12</div>
+										<div class="calendar__day  is-disabled" data-time="1610544276692">13</div>
+										<div class="calendar__day  is-disabled" data-time="1610630676692">14</div>
+										<div class="calendar__day  is-disabled" data-time="1610717076692">15</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1610803476692">16</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1610889876692">17</div>
+										</div>
+										<div class="calendar__day  is-disabled" data-time="1610976276692">18</div>
+										<div class="calendar__day  is-disabled" data-time="1611062676692">19</div>
+										<div class="calendar__day  is-disabled" data-time="1611149076692">20</div>
+										<div class="calendar__day  is-disabled" data-time="1611235476692">21</div>
+										<div class="calendar__day  is-disabled" data-time="1611321876692">22</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1611408276692">23</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1611494676692">24</div>
+										</div>
+										<div class="calendar__day  is-disabled" data-time="1611581076692">25</div>
+										<div class="calendar__day  is-disabled" data-time="1611667476692">26</div>
+										<div class="calendar__day  is-disabled" data-time="1611753876692">27</div>
+										<div class="calendar__day  is-disabled" data-time="1611840276692">28</div>
+										<div class="calendar__day  is-disabled" data-time="1611926676692">29</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1612013076692">30</div>
+										</div>
+										<div class="calendar__day-weekend">
+											<div class="calendar__day  is-disabled is-weekend" data-time="1612099476692">31</div>
+										</div>
+									</div>
+								</section>
+							</div>
+						</div>
+					</section>
+				</div>
+
+				<form class="form-horizontal">
+
+					<div class="col-md-5">
+
+						<div class="form-group">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="rejection_type" value="no_response" checked="checked">
+							  <strong>Schnupperlehren finden kontinuierlich statt</strong><br>
+							  <small>Grundsätzlich sind alle Tage für Schnupperlehren verfügbar. Nicht verfügbare Zeiträume können trotzdem von Hand erfasst werden.</small>
+							</label>
+						  </div>
+						  <div class="nested-controls">
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Montag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Dienstag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Mittwoch
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Donnerstag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Freitag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox"> Samstag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox"> Sonntag
+							  </label>
+							</div>
+						  </div>
+						  <!-- /.nested-controls -->
+
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="rejection_type" value="occupied">
+							  <strong>Schnupperlehren finden nur in ausgewählten Zeiträumen statt</strong><br>
+							  <small>Nur die Tage, die von einem Mitarbeiter markiert wurden, sind für Schnupperlehren verfügbar.</small>
+							</label>
+						  </div>
+						</div>
+						<!-- /.form-group -->
+
+					</div>
+					<!-- /.col -->
+
+					<div class="col-md-1">
+						&nbsp;
+						<!-- spacer -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-md-6">
+
+						<div class="form-group">
+						  <div class="col-sm-12">
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" name="automatically_manage_availability" checked="checked"> <strong>Verfügbarkeit automatisch berechnen</strong>
+							  </label>
+							</div>
+						  </div>
+						</div>
+						
+						<div class="nested-controls">
+							<div class="form-group">
+							  <div class="col-sm-12">
+								<div class="input-group">
+								  <input class="form-control" type="text" name="max_concurrent_applications" value="1">
+								  <span class="input-group-addon">Bewerbungen pro Tag</span>
+								</div>
+								<small>Wenn diese Anzahl Bewerbungen für einen bestimmten Tag erreicht ist, wird dieser Tag weiteren Interessenten als "Nicht verfügbar" angezeigt.</small>
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <div class="col-sm-12">
+								<div class="input-group">
+								  <input class="form-control" type="text" name="max_concurrent_students" value="1">
+								  <span class="input-group-addon">Schnupperlehren pro Tag</span>
+								</div>
+								<small>Wenn diese Anzahl Schnupperlehren für einen bestimmten Tag erreicht ist, wird dieser Tag weiteren Interessenten als "Nicht verfügbar" angezeigt.</small>
+							  </div>
+							</div>
+						  </div>
+						  <!-- /.nested-controls -->
+
+					</div>
+					<!-- /.col -->
+
+				</form>
+
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+      </div>
+	  <!-- ./row -->
+	  
+	  <div class="fixed-bottom-spacer"></div>
+	  
+	  <div class="fixed-bottom-bar">
+
+        <div class="col-md-12">
+			<div class="pull-right spaced-button-row">
+				<button type="button" name="search" class="btn btn-default">
+				  <i class="fa fa-eye"></i>&nbsp; Vorschau anzeigen
+				</button>
+				<button type="button" name="search" class="btn btn-success">
+				  Speichern
+				</button>
+			</div>
+			<button type="button" name="search" class="btn btn-danger">
+			  Löschen
+			</button>
+    	</div>
+        <!-- /.col -->
+
+      </div>
+	  <!-- ./fixed-bottom-bar -->
+      
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../assets/jquery.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../assets/bootstrap.js"></script>
+<!-- Select2 -->
+<script src="../assets/select2.full.min.js"></script><!-- AdminLTE App -->
+<script src="../assets/adminlte.js"></script>
+<!-- DataTables -->
+<script src="../assets/jquery.dataTables.min.js"></script>
+<script src="../assets/dataTables.bootstrap.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="../assets/bootstrap3-wysihtml5.all.min.js"></script>
+
+
+
+
+<!-- page script -->
+<script>
+  
+    //Initialize Select2 Elements
+    $('.select2').select2()
+
+	$('textarea.wysiwyg').wysihtml5({
+	  toolbar: {
+		"font-styles": false, // Font styling, e.g. h1, h2, etc.
+		"emphasis": true, // Italics, bold, etc.
+		"lists": true, // (Un)ordered lists, e.g. Bullets, Numbers.
+		"html": false, // Button which allows you to edit the generated HTML.
+		"link": true, // Button to insert a link.
+		"image": false, // Button to insert an image.
+		"color": false, // Button to change color of font
+		"blockquote": false, // Blockquote
+		"size": "xs" // options are xs, sm, lg
+	  }
+	});
+
+</script>
+
+</body>
+</html>
