@@ -3,24 +3,28 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Schnupperlehre von Maja Beispiel</title>
+  <title>Firmenprofil</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="../assets/bootstrap.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../assets/font-awesome.css">
+  <!-- Select2 -->
+  <link rel="stylesheet" href="../assets/select2.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../assets/AdminLTE.css">
   <!-- Schnuppy Skin -->
   <link rel="stylesheet" href="../assets/skin-schnuppy.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="../assets/dataTables.bootstrap.min.css">
+  <!-- bootstrap wysihtml5 - text editor -->
+  <link rel="stylesheet" href="../assets/bootstrap3-wysihtml5.min.css">
 
 
 
   <link rel="stylesheet" href="../assets/css.css">
-<body class="skin-schnuppy sidebar-mini" style="height: auto; min-height: 100%;">
+<body class="skin-schnuppy sidebar-mini site-detail" style="height: auto; min-height: 100%;">
 <div class="wrapper" style="height: auto; min-height: 100%;">
 
   <header class="main-header">
@@ -141,12 +145,12 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu tree" data-widget="tree">
-        <li >
+        <li>
           <a href="dashboard.html">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
         </li>
-        <li class="active">
+        <li>
           <a href="trial-apprenticeships.html">
             <i class="fa fa-calendar"></i> <span>Schnupperlehren</span>
           </a>
@@ -165,7 +169,7 @@
           </a>
         </li>
         <li class="header">EINSTELLUNGEN</li>
-        <li>
+        <li class="active">
           <a href="company-profile.html">
             <i class="fa fa-sliders"></i> <span>Firmenprofil</span>
           </a>
@@ -190,144 +194,107 @@
   <div class="content-wrapper" style="min-height: 1865px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-    	<h1>Schnupperlehre</h1>
+    	<h1>Firmenprofil</h1>
     </section>
 
     <!-- Main content -->
     <section class="content">
 
-	  <div class="row">
-		<div class="col-md-6">
-		  <div class="box box-solid">
-			<div class="box-header with-border">
-			  <h3 class="box-title">Schüler/in</h3>
-			</div>
-			<!-- /.box-header -->
-			<div class="box-body">
-			  <a class="schnuppy-user-block" href="student.html">
-				<img class="img-circle img-bordered-sm" src="../assets/user7-128x128.jpg" alt="User Image">
-				<span class="username">Maja Beispiel</span>
-			  </a>						
-			</div>
-			<!-- /.box-body -->
-		  </div>
-		  <!-- /.box -->
-		</div>
-		<!-- ./col -->
-
-		<div class="col-md-6">
-		  <div class="box box-solid">
-			<div class="box-header with-border">
-			  <h3 class="box-title">Inserat</h3>
-			</div>
-			<!-- /.box-header -->
-			<div class="box-body">
-				<a href="inserat.html">Elektroinstallateur/in EFZ</a>
-			</div>
-			<!-- /.box-body -->
-		  </div>
-		  <!-- /.box -->
-		</div>
-		<!-- ./col -->
-
-	  </div>
-	  <!-- ./row -->
-    
-
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-md-12">
 		  <div class="box">
+
             <div class="box-header">
-              <h3 class="box-title">Details</h3>
+              <h3 class="box-title">Grunddaten</h3>
             </div>
             <!-- /.box-header -->
 
         	<div class="box-body">
-              <div class="table-responsive">
-                <table class="table no-margin">
-                  <tbody>
-                  <tr>
-                    <th>Status</th>
-                    <td><span class="badge bg-green">Erfolgreich abgeschlossen</span></td>
-                  </tr>
-                  <tr>
-                    <th>Datum</th>
-                    <td>07.10.2020&nbsp;- 08.10.2020</td>
-                  </tr>
-                  <tr>
-                    <th>Typ</th>
-                    <td>Schnupperlehre (2 Tage)</td>
-                  </tr>
-                  <tr>
-                    <th>Bewerbung</th>
-                    <td><a href="application.html">Bewerbung vom 30.09.2020</a></td>
-                  </tr>
-                  <tr>
-                    <th>Standort</th>
-                    <td>
-                      Hauptstandort<br>
-                      Zentralstrasse 123<br>
-                      8901 Mitteldorf<br>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Zeit</th>
-                    <td>09:00</td>
-                  </tr>
-                  <tr>
-                    <th>Treffpunkt</th>
-                    <td>Haupteingang (melde dich am Empfang)</td>
-                  </tr>
-                  <tr>
-                    <th>Anmerkungen</th>
-                    <td>
-                      Warme Kleider anziehen!<br>
-                      Für Verpflegung ist gesorgt.
-                    </td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
+
+				<form class="form-horizontal">
+	
+					<div class="form-group">
+					  <label for="name" class="col-sm-4 control-label">Name</label>
+					  <div class="col-sm-8">
+						  <input class="form-control" type="text" name="name" value="Testfirma GmbH">
+					  </div>
+					</div>
+					
+					<div class="form-group">
+					  <label for="name" class="col-sm-4 control-label">UID</label>
+					  <div class="col-sm-8">
+						  <input class="form-control" type="text" name="name" value="CHE-302.816.540">
+					  </div>
+					</div>
+	
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Typ</label>
+					  <div class="col-sm-8">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="type" value="company">
+							  <strong>Firma</strong><br>
+							  <small>AG oder GmbH</small>
+							</label>
+						  </div>
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="type" value="other_organization">
+							  <strong>Andere Institution</strong><br>
+							  <small>z.B. Gemeindeverwaltung</small>
+							</label>
+						  </div>
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="type" value="sole_proprietorship">
+							  <strong>Einzelfirma</strong><br>
+							</label>
+						  </div>
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="name" class="col-sm-4 control-label">Webseite</label>
+					  <div class="col-sm-8">
+						  <input class="form-control" type="text" name="name" value="https://www.testfirma.ch">
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Logo</label>
+					  <div class="col-sm-8">
+					  	<img src="../assets/companylogo2.png" style="max-width: 200px; max-height: 60px;">
+						<input type="file" id="logo">
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Header-Bild</label>
+					  <div class="col-sm-8">
+					  	<img src="../assets/companyheader1.jpg" style="max-width: 400px; max-height: 200px;">
+						<input type="file" id="header_image">
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="name" class="col-sm-4 control-label">Video</label>
+					  <div class="col-sm-8">
+						<input type="file" id="video">
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Beschreibung</label>
+					  <div class="col-sm-8">
+						  <textarea class="form-control wysiwyg" rows="6" name="description"></textarea>
+					  </div>
+					</div>
+
+				</form>
+
             </div>
             <!-- /.box-body -->
-            
-          </div>
-          <!-- /.box -->
 
-    	</div>
-        <!-- /.col -->
-
-        <div class="col-md-6">
-		  <div class="box">
-            <div class="box-header">
-              <h3 class="box-title">Ansprechsperson</h3>
-            </div>
-            <!-- /.box-header -->
-
-        	<div class="box-body">
-              <div class="table-responsive">
-                <table class="table no-margin">
-                  <tbody>
-                  <tr>
-                    <th>Name</th>
-                    <td>Franz Glauser</td>
-                  </tr>
-                  <tr>
-                    <th>E-Mail</th>
-                    <td><a href="mailto:franz.glauser@testfirma.ch">franz.glauser@testfirma.ch</a></td>
-                  </tr>
-                  <tr>
-                    <th>Telefon</th>
-                    <td>079 234 56 78</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.box-body -->
-            
           </div>
           <!-- /.box -->
 
@@ -336,8 +303,132 @@
 
 
       </div>
-      <!-- /.row -->
+	  <!-- ./row -->
 
+      <div class="row">
+        <div class="col-md-12">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Adresse</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+
+				<form class="form-horizontal">
+	
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Ort *</label>
+					  <div class="col-sm-8 .select2-container--default">
+						<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="1" aria-hidden="true">
+							<option>6729 Testgemeinde</option>
+						</select>
+					  </div>
+					</div>
+					
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Strasse *</label>
+					  <div class="col-sm-8 .select2-container--default">
+						<select class="form-control select2 select2-hidden-accessible" style="width: 100%;" data-select2-id="2" aria-hidden="true">
+							<option>Hauptstrasse 97</option>
+						</select>
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Adresszusatz</label>
+					  <div class="col-sm-8 .select2-container--default">
+						  <input class="form-control" type="text" name="addition" value="">
+					  </div>
+					</div>
+					
+					<div class="form-group">
+					  <label for="name" class="col-sm-4 control-label">Gebäude</label>
+					  <div class="col-sm-8">
+						  <input class="form-control" type="text" name="building" value="A">
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="name" class="col-sm-4 control-label">Geografische Position</label>
+					  <div class="col-sm-8">
+						<div class="input-group input-group-sm">
+							<input type="text" class="form-control" disabled="disabled" value="(6.234124123123,4.23123132132)">
+							<span class="input-group-btn">
+							  <button type="button" class="btn btn-default btn-flat">Auf Karte auswählen</button>
+							</span>
+						  </div>
+					  </div>
+					</div>
+
+				</form>
+
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+      </div>
+	  <!-- ./row -->
+
+      <div class="row">
+        <div class="col-md-12">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Schnuppy-Details</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th class="col-md-4">Kontrolliert durch Schnuppy-Admin am</th>
+                    <td>12.12.2020</td>
+                  </tr>
+                  <tr>
+                    <th class="col-md-4">Schnuppy-Region</th>
+                    <td>Dielsdorf</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
+      </div>
+	  <!-- ./row -->
+
+	  <div class="fixed-bottom-spacer"></div>
+
+	  <div class="fixed-bottom-bar">
+
+        <div class="col-md-12">
+			<div class="pull-right spaced-button-row">
+				<button type="button" name="search" class="btn btn-success">
+				  Speichern
+				</button>
+			</div>
+    	</div>
+        <!-- /.col -->
+
+      </div>
+	  <!-- ./fixed-bottom-bar -->
       
     </section>
     <!-- /.content -->
@@ -351,49 +442,37 @@
 <script src="../assets/jquery.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../assets/bootstrap.js"></script>
-<!-- AdminLTE App -->
+<!-- Select2 -->
+<script src="../assets/select2.full.min.js"></script><!-- AdminLTE App -->
 <script src="../assets/adminlte.js"></script>
 <!-- DataTables -->
 <script src="../assets/jquery.dataTables.min.js"></script>
 <script src="../assets/dataTables.bootstrap.min.js"></script>
+<!-- Bootstrap WYSIHTML5 -->
+<script src="../assets/bootstrap3-wysihtml5.all.min.js"></script>
+
 
 
 
 <!-- page script -->
 <script>
   
-	var trialApprenticeshipsTable = $("#trialApprenticeshipsTable").DataTable({
-		paging: false,
-		lengthChange: false,
-		searching: false,
-		ordering: true,
-		info: false,
-		autoWidth: false,
-		columns: [
-			{ orderSequence: [ "asc", "desc" ] },
-			{ orderSequence: [ "asc", "desc" ] },
-			{ orderSequence: [ "desc", "asc" ] },
-			{ orderSequence: [ "desc", "asc" ] },
-			{ orderSequence: [ "desc", "asc" ] },
-			{ orderSequence: [ "desc", "asc" ] },
-		]
-    })
+    //Initialize Select2 Elements
+    $('.select2').select2()
 
-	var applicationsTable = $("#applicationsTable").DataTable({
-		paging: false,
-		lengthChange: false,
-		searching: false,
-		ordering: true,
-		info: false,
-		autoWidth: false,
-		columns: [
-			{ orderSequence: [ "asc", "desc" ] },
-			{ orderSequence: [ "asc", "desc" ] },
-			{ orderSequence: [ "desc", "asc" ] },
-			{ orderSequence: [ "desc", "asc" ] },
-			{ orderSequence: [ "desc", "asc" ] },
-		]
-    })
+	$('textarea.wysiwyg').wysihtml5({
+	  toolbar: {
+		"font-styles": false, // Font styling, e.g. h1, h2, etc.
+		"emphasis": true, // Italics, bold, etc.
+		"lists": true, // (Un)ordered lists, e.g. Bullets, Numbers.
+		"html": false, // Button which allows you to edit the generated HTML.
+		"link": true, // Button to insert a link.
+		"image": false, // Button to insert an image.
+		"color": false, // Button to change color of font
+		"blockquote": false, // Blockquote
+		"size": "xs" // options are xs, sm, lg
+	  }
+	});
 
 </script>
 
