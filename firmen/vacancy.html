@@ -425,6 +425,28 @@
 
             <div class="box-header">
               <h3 class="box-title">Erforderliche Unterlagen</h3>
+				<a href="javascript:;" data-toggle="modal" data-target="#modal-info-required_files" class="fa fa-info info-button"></a>
+
+				<div class="modal fade" id="modal-info-required_files" style="display: none;">
+				  <div class="modal-dialog with-timeline">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">×</span></button>
+					  </div>
+					  <div class="modal-body">
+						  <p>...</p>
+					  </div>
+					  <div class="modal-footer">
+					    <small class="info-identifier pull-left">admin_firmen_inserat_unterlagen_hinweise</small>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+					  </div>
+					</div>
+					<!-- /.modal-content -->
+				  </div>
+				  <!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
             </div>
             <!-- /.box-header -->
 
@@ -512,16 +534,7 @@
         	<div class="box-body">
 
 				<form class="form-horizontal">
-					<div class="form-group">
-					  <label for="profession" class="col-sm-4 control-label">Umkreis</label>
-					  <div class="col-sm-8">
-					    <div class="input-group">
-              			  <input class="form-control" type="text" name="search_radius" value="5">
-						  <span class="input-group-addon">Kilometer</span>
-						</div>
-						<small>Das Inserat wird nur Jugendlichen angezeigt, die innerhalb dieser Distanz zum Standort wohnen.</small>
-					  </div>
-					</div>
+
 					<div class="form-group">
 					  <label for="profession" class="col-sm-4 control-label"></label>
 					  <div class="col-sm-8">
@@ -530,6 +543,17 @@
 							<input type="checkbox"> Nur für Jugendliche im letzten Schuljahr
 						  </label>
 						</div>
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Einzungsradius</label>
+					  <div class="col-sm-8">
+					    <div class="input-group">
+              			  <input class="form-control" type="text" name="search_radius" value="15">
+						  <span class="input-group-addon">Kilometer</span>
+						</div>
+						<small>Das Inserat wird nur Jugendlichen angezeigt, die innerhalb dieser Distanz zum Standort wohnen.</small>
 					  </div>
 					</div>
 
@@ -542,7 +566,7 @@
           <!-- /.box -->
 
 
-		  <div class="box">
+		  <div class="box collapsed-box">
 
             <div class="box-header">
               <h3 class="box-title">Informationstag</h3>
@@ -567,10 +591,15 @@
 
 				</div>
 				<!-- /.modal -->
+				
+				<div class="box-tools pull-right">
+					<button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+				</div>
+              
             </div>
             <!-- /.box-header -->
 
-        	<div class="box-body">
+        	<div class="box-body" style="display: none;">
 
 				<form class="form-horizontal">
 					<div class="form-group">
@@ -597,6 +626,86 @@
             
           </div>
           <!-- /.box -->
+
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Verfügbarkeit Lehrstelle</h3>
+			  <a href="javascript:;" data-toggle="modal" data-target="#modal-info-availability-apprenticeship" class="fa fa-info info-button"></a>
+				<div class="modal fade" id="modal-info-availability-apprenticeship" style="display: none;">
+				  <div class="modal-dialog with-timeline">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">×</span></button>
+					  </div>
+					  <div class="modal-body">
+					  <p>...</p>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+					  </div>
+					</div>
+					<!-- /.modal-content -->
+				  </div>
+				  <!-- /.modal-dialog -->
+
+				</div>
+				<!-- /.modal -->
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+        	
+			<div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>2021</th>
+                    <td>
+                    	<select>
+                    		<option></option>
+                    		<option>Verfügbar</option>
+                    		<option>Auswahlverfahren läuft</option>
+                    		<option selected="selected">Besetzt</option>
+                    		<option>Keine Lehrstelle in diesem Jahr</option>
+                    	</select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>2022</th>
+                    <td>
+                    	<select>
+                    		<option></option>
+                    		<option>Verfügbar</option>
+                    		<option selected="selected">Auswahlverfahren läuft</option>
+                    		<option>Besetzt</option>
+                    		<option>Keine Lehrstelle in diesem Jahr</option>
+                    	</select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>2023</th>
+                    <td>
+                    	<select>
+                    		<option></option>
+                    		<option>Verfügbar</option>
+                    		<option>Auswahlverfahren läuft</option>
+                    		<option>Besetzt</option>
+                    		<option>Keine Lehrstelle in diesem Jahr</option>
+                    	</select>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+                          
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
 
     	</div>
         <!-- /.col -->
@@ -679,10 +788,39 @@
 						  <div class="radio">
 							<label>
 							  <input type="radio" name="rejection_type" value="occupied">
-							  <strong>Schnupperlehren finden mit Selektion statt</strong><br>
+							  <strong>Schnupperlehren finden mit Selektion statt <a href="javascript:;" data-toggle="modal" data-target="#modal-info-selection" class="fa fa-info info-button"></a></strong><br>
+								<div class="modal fade" id="modal-info-selection" style="display: none;">
+								  <div class="modal-dialog with-timeline">
+									<div class="modal-content">
+									  <div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+										  <span aria-hidden="true">×</span></button>
+									  </div>
+									  <div class="modal-body">
+									  <p>...</p>
+									  </div>
+									  <div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+									  </div>
+									</div>
+									<!-- /.modal-content -->
+								  </div>
+								  <!-- /.modal-dialog -->
+
+								</div>
+								<!-- /.modal -->
 							  <small>Die Bewerbung ist nur für exakte Daten möglich, die von einem Mitarbeiter im Vorfeld ausgewählt wurden. Die Bewerbenden für ein bestimmtes Datum werden automatisch gruppiert.</small>
 							</label>
 						  </div>
+
+						  <div class="nested-controls">
+						  	<p>Selektionszeitpunkt</p>
+							<div class="input-group">
+							  <input class="form-control" type="text" name="max_concurrent_applications" value="30">
+							  <span class="input-group-addon">Tage vorher</span>
+							</div>
+						  </div>
+						  <!-- /.nested-controls -->
 						  
 						</div>
 						<!-- /.form-group -->

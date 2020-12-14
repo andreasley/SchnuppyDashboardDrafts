@@ -384,6 +384,10 @@
 	line-height: 18px;
 }
 
+.info-identifier {
+	color: #dddddd;
+}
+
 /* 
 	All timeline styles are copied from the frontend except for the day font-size, which has been changed from 0.9vw to 0.9 em.
  */
