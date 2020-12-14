@@ -248,7 +248,7 @@
                   <tbody>
                   <tr>
                     <th>Status</th>
-                    <td><span class="badge bg-green">Erfolgreich abgeschlossen</span></td>
+                    <td><span class="badge bg-blue">Laufend</span></td>
                   </tr>
                   <tr>
                     <th>Datum</th>
@@ -279,7 +279,7 @@
                     <td>Haupteingang (melde dich am Empfang)</td>
                   </tr>
                   <tr>
-                    <th>Anmerkungen</th>
+                    <th>Zusätzliche Informationen</th>
                     <td>
                       Warme Kleider anziehen!<br>
                       Für Verpflegung ist gesorgt.
@@ -335,8 +335,158 @@
         <!-- /.col -->
 
 
+        <div class="col-md-6">
+		  <div class="box">
+
+        	<div class="box-body">
+				<button type="button" class="btn btn-block btn-warning btn-lg" data-toggle="modal" data-target="#modal-cancel">Schnupperlehre absagen</button>
+				<button type="button" class="btn btn-block btn-danger btn-lg" data-toggle="modal" data-target="#modal-alarm">Alarm: Schüler ist nicht erschienen</button>
+				<button type="button" class="btn btn-block btn-default btn-lg" data-toggle="modal" data-target="#modal-alarm">Schüler ist nachträglich erschienen</button>
+            </div>
+            <!-- /.box-body -->
+            
+			<div class="modal fade" id="modal-cancel" style="display: none;">
+			  <div class="modal-dialog with-timeline">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">×</span></button>
+					<h4 class="modal-title">Schnupperbesuch/Schnupperlehre absagen</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="form-horizontal">
+					  <div class="box-body">
+						<div class="col-md-6">
+						
+							<div class="form-group">
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="occupied">
+								  <strong>Besetzt</strong><br>
+								  <small>Die Schnupperlehrstelle ist doch nicht verfügbar oder bereits vergeben</small>
+								</label>
+							  </div>
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
+								  <strong>Operationelle Gründe</strong><br>
+								  <small>Die Schnupperlehre kann aus internen Gründen nicht durchgeführt werden.</small>
+								</label>
+							  </div>
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
+								  <strong>Personalausfall</strong><br>
+								  <small>Die für die Schnupperlehre zuständige Person ist ungeplant nicht verfügbar.</small>
+								</label>
+							  </div>
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
+								  <strong>Der Bewerbende hat sich krankgemeldet</strong><br>
+								</label>
+							  </div>
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="other">
+								  <strong>Andere Gründe</strong>
+								</label>
+							  </div>
+							</div>
+					  		<!-- /.form-group -->
+							
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+							  <label for="rejection_explanation" class="col-sm-4 control-label">Zusätzliche Informationen</label>
+							  <div class="col-sm-8">
+								<textarea class="form-control" rows="10" id="additional_information"></textarea>
+							  </div>
+							</div>
+						</div>
+					  </div>
+					  <!-- /.box-body -->
+					</form>
+
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
+					<button type="button" class="btn btn-warning">Schnupperlehre absagen</button>
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+
+			</div>
+			<!-- /.modal -->
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+        <div class="col-md-6">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Interne Bewertung</h3>
+            </div>
+            <!-- /.box-header -->
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>Bewertung durch Firma</th>
+                    <td>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star-o"></i>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+				<textarea class="form-control" rows="6" name="description"></textarea>
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
+
       </div>
       <!-- /.row -->
+
+	  <div class="fixed-bottom-spacer"></div>
+	  
+	  <div class="fixed-bottom-bar">
+
+        <div class="col-md-12">
+			<div class="pull-right spaced-button-row">
+				<button type="button" name="search" class="btn btn-default">
+				  <i class="fa fa-eye"></i>&nbsp; Vorschau anzeigen
+				</button>
+				<button type="button" name="search" class="btn btn-success">
+				  Speichern
+				</button>
+			</div>
+			<button type="button" name="search" class="btn btn-danger">
+			  Löschen
+			</button>
+    	</div>
+        <!-- /.col -->
+
+      </div>
+	  <!-- ./fixed-bottom-bar -->
 
       
     </section>

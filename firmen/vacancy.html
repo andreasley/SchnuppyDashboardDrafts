@@ -268,7 +268,36 @@
 					</div>
 
 					<div class="form-group">
-					  <label for="profession" class="col-sm-4 control-label">Schnuppertypen</label>
+					  <label for="profession" class="col-sm-4 control-label">Schnuppertypen <br><a href="javascript:;" data-toggle="modal" data-target="#modal-info-vacancytypes" class="fa fa-info info-button"></a></label>
+						<div class="modal fade" id="modal-info-vacancytypes" style="display: none;">
+						  <div class="modal-dialog with-timeline">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">×</span></button>
+							  </div>
+							  <div class="modal-body">
+								<p>Schnupperlehre ist nicht gleich Schnupperlehre. Es gibt drei Arten: den Kurzbesuch, die eigentliche Schnupperlehre und die Schnupperlehre im Bewerbungsverfahren für eine Lehrstelle</p>
+								<p></p>
+								<p>Berufsberatung.ch definiert:</p>
+								<p><b>Schnupperbesuch</b> (1 Tag)</p>
+								<p>Besichtigung einzelner Tätigkeiten in einem Betrieb</p>
+								<p>Einzelne Arbeiten können ausgeführt werden. Der Schnupperbesuch gewährt einen ersten konkreten Einblick in den Arbeitsalltag eines Betriebs. Es wird nicht die ganze Palette von Aufgaben, die den Beruf ausmachen, sichtbar.</p>
+								<p>&nbsp;</p>
+								<p><b>Schnupperlehre</b> (2-5 Tage)</p>
+								<p>Besichtigung der zentralen Tätigkeiten und Mitarbeit in einem Lehrbetrieb</p>
+								<p>Jugendliche arbeiten aktiv mit im Lehrbetrieb. Grössere Betriebe bieten spezielle Schnupperlehrprogramme an. Die Schnupperlehre ermöglicht damit einen vertieften Einblick in die wichtigsten Tätigkeiten eines Berufs.</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+							  </div>
+							</div>
+							<!-- /.modal-content -->
+						  </div>
+						  <!-- /.modal-dialog -->
+
+						</div>
+						<!-- /.modal -->
 					  <div class="col-sm-8">
 						<div class="checkbox">
 						  <label>
@@ -285,24 +314,98 @@
 							<input type="checkbox"> Schnupperlehre (3 Tage)
 						  </label>
 						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Schnupperlehre (4 Tage)
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Schnupperlehre (5 Tage)
+						  </label>
+						</div>
 					  </div>
 					</div>
 
 					<div class="form-group">
-					  <label for="location" class="col-sm-4 control-label">Weitere Informationen</label>
+					  <label for="location" class="col-sm-4 control-label">Wichtige Informationen <br><a href="javascript:;" data-toggle="modal" data-target="#modal-info-additional_information" class="fa fa-info info-button"></a></label>
+						<div class="modal fade" id="modal-info-additional_information" style="display: none;">
+						  <div class="modal-dialog with-timeline">
+							<div class="modal-content">
+							  <div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+								  <span aria-hidden="true">×</span></button>
+							  </div>
+							  <div class="modal-body">
+							  <p>Wichtige Informationen für Bewerbende können hier hinterlegt werden wie z.B. spezielle Anforderungen an Bewerbende wie gute Sprachkenntnisse oder eine</p>
+							  </div>
+							  <div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+							  </div>
+							</div>
+							<!-- /.modal-content -->
+						  </div>
+						  <!-- /.modal-dialog -->
+
+						</div>
+						<!-- /.modal -->
 					  <div class="col-sm-8">
 						  <textarea class="form-control wysiwyg" rows="6" name="description"></textarea>
 					  </div>
 					</div>
 
+				</form>
+
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Standardinfos für akzeptierte Bewerbungen</h3>
+				<a href="javascript:;" data-toggle="modal" data-target="#modal-info-accept_infos" class="fa fa-info info-button"></a>
+
+				<div class="modal fade" id="modal-info-accept_infos" style="display: none;">
+				  <div class="modal-dialog with-timeline">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">×</span></button>
+					  </div>
+					  <div class="modal-body">
+						  <p>Diese Informationen werden den Jugendlichen, deren Bewerbung akzeptiert wird, zugestellt</p>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+					  </div>
+					</div>
+					<!-- /.modal-content -->
+				  </div>
+				  <!-- /.modal-dialog -->
+				</div>
+				<!-- /.modal -->
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+
+				<form class="form-horizontal">
+
 					<div class="form-group">
-					  <label for="automatically_reject_after" class="col-sm-4 control-label">Automatische Ablehnung</label>
+					  <label for="location" class="col-sm-4 control-label">Anhang</label>
 					  <div class="col-sm-8">
-						<div class="input-group">
-						  <input class="form-control" type="text" name="automatically_reject_after" value="5">
-						  <span class="input-group-addon">Tage</span>
-						</div>
-						<small>Von Ihnen nicht beantwortete Bewerbungen werden nach dieser Anzahl Tage automatisch abgelehnt.</small>
+					  	<input type="file" />
+					  </div>
+					</div>
+
+					<div class="form-group">
+					  <label for="location" class="col-sm-4 control-label">Zusätzliche Informationen</label>
+						
+					  <div class="col-sm-8">
+						  <textarea class="form-control wysiwyg" rows="6" name="description"></textarea>
 					  </div>
 					</div>
 
@@ -321,7 +424,7 @@
 		  <div class="box">
 
             <div class="box-header">
-              <h3 class="box-title">Anforderungen an Bewerbende</h3>
+              <h3 class="box-title">Erforderliche Unterlagen</h3>
             </div>
             <!-- /.box-header -->
 
@@ -329,11 +432,16 @@
 
 				<form class="form-horizontal">
 					<div class="form-group">
-					  <label for="profession" class="col-sm-4 control-label">Erforderliche Unterlagen</label>
+					  <label for="profession" class="col-sm-4 control-label">Schnupperbesuche</label>
 					  <div class="col-sm-8">
 						<div class="checkbox">
 						  <label>
 							<input type="checkbox"> Motivationsschreiben
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> 3 Motivationspunkte
 						  </label>
 						</div>
 						<div class="checkbox">
@@ -344,6 +452,43 @@
 						<div class="checkbox">
 						  <label>
 							<input type="checkbox"> Zeugnisse
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Bewerbungsschreiben
+						  </label>
+						</div>
+					  </div>
+					</div>
+				</form>
+				<form class="form-horizontal">
+					<div class="form-group">
+					  <label for="profession" class="col-sm-4 control-label">Schnupperlehren</label>
+					  <div class="col-sm-8">
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Motivationsschreiben
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> 3 Motivationspunkte
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Lebenslauf
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Zeugnisse
+						  </label>
+						</div>
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> Bewerbungsschreiben
 						  </label>
 						</div>
 					  </div>
@@ -401,6 +546,27 @@
 
             <div class="box-header">
               <h3 class="box-title">Informationstag</h3>
+			  <a href="javascript:;" data-toggle="modal" data-target="#modal-info-informationday" class="fa fa-info info-button"></a>
+				<div class="modal fade" id="modal-info-informationday" style="display: none;">
+				  <div class="modal-dialog with-timeline">
+					<div class="modal-content">
+					  <div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						  <span aria-hidden="true">×</span></button>
+					  </div>
+					  <div class="modal-body">
+					  <p>...</p>
+					  </div>
+					  <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Schliessen</button>
+					  </div>
+					</div>
+					<!-- /.modal-content -->
+				  </div>
+				  <!-- /.modal-dialog -->
+
+				</div>
+				<!-- /.modal -->
             </div>
             <!-- /.box-header -->
 
@@ -450,6 +616,125 @@
             <!-- /.box-header -->
 
         	<div class="box-body">
+
+				<form class="form-horizontal">
+
+					<div class="col-md-5">
+
+						<div class="form-group">
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="rejection_type" value="no_response" checked="checked">
+							  <strong>Schnupperlehren finden kontinuierlich statt</strong><br>
+							  <small>Alle ausgewählten Wochentage sind für Schnupperlehren verfügbar. Nicht verfügbare Zeiträume können trotzdem von Hand erfasst werden.</small>
+							</label>
+						  </div>
+						  <div class="nested-controls">
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Montag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Dienstag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Mittwoch
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Donnerstag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" checked="checked"> Freitag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox"> Samstag
+							  </label>
+							</div>
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox"> Sonntag
+							  </label>
+							</div>
+						  </div>
+						  <!-- /.nested-controls -->
+
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="rejection_type" value="occupied">
+							  <strong>Schnupperlehren finden nur in ausgewählten Zeiträumen statt</strong><br>
+							  <small>Nur diejenigen Tage, die von einem Mitarbeiter markiert wurden, sind für Schnupperlehren verfügbar.</small>
+							</label>
+						  </div>
+
+						  <div class="radio">
+							<label>
+							  <input type="radio" name="rejection_type" value="occupied">
+							  <strong>Schnupperlehren finden mit Selektion statt</strong><br>
+							  <small>Die Bewerbung ist nur für exakte Daten möglich, die von einem Mitarbeiter im Vorfeld ausgewählt wurden. Die Bewerbenden für ein bestimmtes Datum werden automatisch gruppiert.</small>
+							</label>
+						  </div>
+						  
+						</div>
+						<!-- /.form-group -->
+
+					</div>
+					<!-- /.col -->
+
+					<div class="col-md-1">
+						&nbsp;
+						<!-- spacer -->
+					</div>
+					<!-- /.col -->
+
+					<div class="col-md-6">
+
+						<div class="form-group">
+						  <div class="col-sm-12">
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox" name="automatically_manage_availability" checked="checked"> <strong>Verfügbarkeit automatisch berechnen</strong>
+							  </label>
+							</div>
+						  </div>
+						</div>
+						
+						<div class="nested-controls">
+							<div class="form-group">
+							  <div class="col-sm-12">
+								<div class="input-group">
+								  <input class="form-control" type="text" name="max_concurrent_applications" value="3">
+								  <span class="input-group-addon">Bewerbungen für Tag</span>
+								</div>
+								<small>Wenn diese Anzahl Bewerbungen für einen bestimmten Tag erreicht ist, wird dieser Tag weiteren Interessenten als "Nicht verfügbar" angezeigt.</small>
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <div class="col-sm-12">
+								<div class="input-group">
+								  <input class="form-control" type="text" name="max_concurrent_students" value="1">
+								  <span class="input-group-addon">Schnupperlehren pro Tag</span>
+								</div>
+								<small>Wenn diese Anzahl Schnupperlehren für einen bestimmten Tag erreicht ist, wird dieser Tag weiteren Interessenten als "Nicht verfügbar" angezeigt.</small>
+							  </div>
+							</div>
+						  </div>
+						  <!-- /.nested-controls -->
+
+					</div>
+					<!-- /.col -->
+
+				</form>
 
 				<div class="calendar-container">
 					<section class="calendar calendar--3-columns calendar--inlined">
@@ -706,115 +991,6 @@
 					</section>
 				</div>
 
-				<form class="form-horizontal">
-
-					<div class="col-md-5">
-
-						<div class="form-group">
-						  <div class="radio">
-							<label>
-							  <input type="radio" name="rejection_type" value="no_response" checked="checked">
-							  <strong>Schnupperlehren finden kontinuierlich statt</strong><br>
-							  <small>Grundsätzlich sind alle Tage für Schnupperlehren verfügbar. Nicht verfügbare Zeiträume können trotzdem von Hand erfasst werden.</small>
-							</label>
-						  </div>
-						  <div class="nested-controls">
-							<div class="checkbox">
-							  <label>
-								<input type="checkbox" checked="checked"> Montag
-							  </label>
-							</div>
-							<div class="checkbox">
-							  <label>
-								<input type="checkbox" checked="checked"> Dienstag
-							  </label>
-							</div>
-							<div class="checkbox">
-							  <label>
-								<input type="checkbox" checked="checked"> Mittwoch
-							  </label>
-							</div>
-							<div class="checkbox">
-							  <label>
-								<input type="checkbox" checked="checked"> Donnerstag
-							  </label>
-							</div>
-							<div class="checkbox">
-							  <label>
-								<input type="checkbox" checked="checked"> Freitag
-							  </label>
-							</div>
-							<div class="checkbox">
-							  <label>
-								<input type="checkbox"> Samstag
-							  </label>
-							</div>
-							<div class="checkbox">
-							  <label>
-								<input type="checkbox"> Sonntag
-							  </label>
-							</div>
-						  </div>
-						  <!-- /.nested-controls -->
-
-						  <div class="radio">
-							<label>
-							  <input type="radio" name="rejection_type" value="occupied">
-							  <strong>Schnupperlehren finden nur in ausgewählten Zeiträumen statt</strong><br>
-							  <small>Nur die Tage, die von einem Mitarbeiter markiert wurden, sind für Schnupperlehren verfügbar.</small>
-							</label>
-						  </div>
-						</div>
-						<!-- /.form-group -->
-
-					</div>
-					<!-- /.col -->
-
-					<div class="col-md-1">
-						&nbsp;
-						<!-- spacer -->
-					</div>
-					<!-- /.col -->
-
-					<div class="col-md-6">
-
-						<div class="form-group">
-						  <div class="col-sm-12">
-							<div class="checkbox">
-							  <label>
-								<input type="checkbox" name="automatically_manage_availability" checked="checked"> <strong>Verfügbarkeit automatisch berechnen</strong>
-							  </label>
-							</div>
-						  </div>
-						</div>
-						
-						<div class="nested-controls">
-							<div class="form-group">
-							  <div class="col-sm-12">
-								<div class="input-group">
-								  <input class="form-control" type="text" name="max_concurrent_applications" value="1">
-								  <span class="input-group-addon">Bewerbungen pro Tag</span>
-								</div>
-								<small>Wenn diese Anzahl Bewerbungen für einen bestimmten Tag erreicht ist, wird dieser Tag weiteren Interessenten als "Nicht verfügbar" angezeigt.</small>
-							  </div>
-							</div>
-
-							<div class="form-group">
-							  <div class="col-sm-12">
-								<div class="input-group">
-								  <input class="form-control" type="text" name="max_concurrent_students" value="1">
-								  <span class="input-group-addon">Schnupperlehren pro Tag</span>
-								</div>
-								<small>Wenn diese Anzahl Schnupperlehren für einen bestimmten Tag erreicht ist, wird dieser Tag weiteren Interessenten als "Nicht verfügbar" angezeigt.</small>
-							  </div>
-							</div>
-						  </div>
-						  <!-- /.nested-controls -->
-
-					</div>
-					<!-- /.col -->
-
-				</form>
 
             </div>
             <!-- /.box-body -->
@@ -879,6 +1055,8 @@
   
     //Initialize Select2 Elements
     $('.select2').select2()
+
+	$('[data-toggle="tooltip"]').tooltip()
 
 	$('textarea.wysiwyg').wysihtml5({
 	  toolbar: {

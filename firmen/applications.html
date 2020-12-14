@@ -205,6 +205,55 @@
     
       <div class="row">
         <div class="col-xs-12">
+
+			<div class="box">
+<!-- 
+            <div class="box-header">
+              <h3 class="box-title">Ansprechsperson</h3>
+            </div>
+            <!~~ /.box-header ~~>
+ -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>Schnupperlehrstelle</th>
+                    <td>
+						<select>
+							<option>Alle Inserate</option>
+						  <optgroup label="Produktion">
+							<option>Informatiker/in EFZ</option>
+						  </optgroup>
+						  <optgroup label="Showroom">
+							<option>Kaufmann/-frau EFZ Bank</option>
+						  </optgroup>
+						  <optgroup label="Hauptsitz">
+							<option>Systemgastronomiefachmann/-frau EFZ</option>
+						  </optgroup>
+						</select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Schnupperdatum für Selektion</th>
+                    <td>
+						<select>
+							<option>Alle Selektionen</option>
+							<option>14.01.2020 - 15.01.2020</option>
+							<option>21.01.2020 - 22.01.2020</option>
+						</select>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+
               <table id="mainTable" class="table table-bordered table-striped box table-applications" data-order='[[1, "desc"]]'>
                 <thead>
                 <tr>
@@ -213,7 +262,7 @@
                     <th>Inserat</th>
 					<th data-orderable="false">Standort</th>
                     <th>Status</th>
-                    <th>Vollständig</th>
+                    <th>Bewertung</th>
                     <th data-orderable="false"></th>
                 </tr>
                 </thead>
@@ -228,8 +277,14 @@
                     <td data-sort="2020-09-30">30.09.2020</td>
                     <td data-sort="Elektroinstallateur/in EFZ"><a href="vacancy.html">Elektroinstallateur/in EFZ</a></td>
                     <td>Hauptsitz</td>
-                    <td data-sort="waiting_on_company"><span class="label label-warning">Offen</span> <small>Warte auf Firma</small></td>
-                    <td data-sort="false"></td>
+                    <td data-sort="waiting_on_company"><span class="label label-warning">Neu</span></td>
+                    <td data-sort="0">
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+                    </td>
                     <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
                   </tr>
                   <tr>
@@ -243,35 +298,53 @@
                     <td data-sort="Elektroinstallateur/in EFZ"><a href="vacancy.html">Elektroinstallateur/in EFZ</a></td>
                     <td>Produktion</td>
                     <td data-sort="waiting_on_student"><span class="label label-muted">Offen</span> <small>Warte auf Jug.</small></td>
-                    <td data-sort="false"></td>
+                    <td data-sort="0">
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+                    </td>
                     <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
                   </tr>
                   <tr>
                     <td>
 					  <a class="schnuppy-user-block" href="student.html">
 						<img class="img-circle img-bordered-sm" src="../assets/user6-128x128.jpg" alt="User Image">
-						<span class="username">Maja Beispiel</span>
+						<span class="username">Claudio Beispiel</span>
 					  </a>						
                     </td>
                     <td data-sort="2020-09-30">30.09.2020</td>
                     <td data-sort="Elektroinstallateur/in EFZ"><a href="vacancy.html">Elektroinstallateur/in EFZ</a></td>
                     <td>Showroom</td>
                     <td data-sort="waiting_on_student"><span class="label label-muted">Offen</span> <small>Warte auf Jug.</small></td>
-                    <td data-sort="false"></td>
+                    <td data-sort="0">
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+                    </td>
                     <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
                   </tr>
                   <tr>
                     <td>
 					  <a class="schnuppy-user-block" href="student.html">
 						<img class="img-circle img-bordered-sm" src="../assets/user4-128x128.jpg" alt="User Image">
-						<span class="username">Luca Beispiel</span>
+						<span class="username">Nico Beispiel</span>
 					  </a>						
                     </td>
                     <td data-sort="2020-09-15">15.09.2020</td>
                     <td data-sort="Elektroinstallateur/in EFZ"><a href="vacancy.html">Elektroinstallateur/in EFZ</a></td>
                     <td>Produktion</td>
                     <td data-sort="waiting_on_company"><span class="label label-warning">Offen</span> <small>Warte auf Firma</small></td>
-                    <td data-sort="true"><i class="fa fa-check"></i></td>
+                    <td data-sort="3">
+						<a href=""><i class="fa fa-star"></i></a>
+						<a href=""><i class="fa fa-star"></i></a>
+						<a href=""><i class="fa fa-star"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+                    </td>
                     <td><a href="application.html" class="btn btn-sm btn-default pull-right">Bewerbung anzeigen</a></td>
                   </tr>
                 </tbody>

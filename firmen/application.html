@@ -282,21 +282,38 @@
 		  <div class="box">
 
         	<div class="box-body">
+<!-- 
 				<div class="checkbox">
                   <label>
                     <input type="checkbox"> Die Bewerbung ist vollständig
                   </label>
                 </div> 
+ -->
                 
 				<div class="rating">
-					Interne Bewertung:
-					<a href=""><i class="fa fa-star-o"></i></a>
-					<a href=""><i class="fa fa-star-o"></i></a>
-					<a href=""><i class="fa fa-star-o"></i></a>
-					<a href=""><i class="fa fa-star-o"></i></a>
-					<a href=""><i class="fa fa-star-o"></i></a>
+					Interne Bewertung der Bewerbung:
+					<div>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+						<a href=""><i class="fa fa-star-o"></i></a>
+	                </div> 
                 </div> 
+            </div>
+            <!-- /.box-body -->
 
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
+        <div class="col-md-4">
+		  <div class="box">
+
+        	<div class="box-body">
 				<button type="button" class="btn btn-block btn-success btn-lg" data-toggle="modal" data-target="#modal-accept">Bewerbung akzeptieren</button>
 				<button type="button" class="btn btn-block btn-danger btn-lg" data-toggle="modal" data-target="#modal-reject">Bewerbung ablehnen</button>
             </div>
@@ -604,6 +621,12 @@
 								<textarea class="form-control" rows="6" id="starting_information"></textarea>
 							  </div>
 							</div>
+							<div class="form-group">
+							  <label for="attachment" class="col-sm-4 control-label">Anhang</label>
+							  <div class="col-sm-8">
+							  	<a href="#"><i class="fa fa-file"></i> Infos Schnuppern Testfirma 2020.pdf</a>
+							  </div>
+							</div>
 						</div>
 					  </div>
 					  <!-- /.box-body -->
@@ -637,44 +660,44 @@
 							<div class="form-group">
 							  <div class="radio">
 								<label>
-								  <input type="radio" name="rejection_type" value="no_response">
-								  <strong>Nicht gemeldet</strong><br>
-								  <small>Der/die Jugendliche hat ungenügend kommuniziert</small>
+								  <input type="radio" name="rejection_type" value="occupied">
+								  <strong>Besetzt</strong><br>
+								  <small>Die Schnupperlehrstelle ist kurzfristig doch nicht verfügbar oder wurde bereits vergeben.</small>
 								</label>
 							  </div>
 							  <div class="radio">
 								<label>
-								  <input type="radio" name="rejection_type" value="occupied">
-								  <strong>Besetzt</strong><br>
-								  <small>Die Schnupperlehrstelle ist doch nicht verfügbar oder bereits vergeben</small>
+								  <input type="radio" name="rejection_type" value="no_response">
+								  <strong>Nicht gemeldet</strong><br>
+								  <small>Der/die Jugendliche hat nicht zurückgerufen oder angeforderte Unterlagen nicht geschickt.</small>
 								</label>
 							  </div>
 							  <div class="radio">
 								<label>
 								  <input type="radio" name="rejection_type" value="missing_documents">
 								  <strong>Fehlende Unterlagen</strong><br>
-								  <small>Die Bewerbungsunterlagen sind unvollständig</small>
+								  <small>Die Bewerbungsunterlagen sind unvollständig.</small>
 								</label>
 							  </div>
 							  <div class="radio">
 								<label>
 								  <input type="radio" name="rejection_type" value="too_many_applicants">
 								  <strong>Überzählig bei Selektion</strong><br>
-								  <small>Aufgrund beschränkter Anzahl Stellen konnte diese Bewerbung nicht akzeptiert werden</small>
+								  <small>Aufgrund beschränkter Anzahl Stellen konnte diese Bewerbung nicht akzeptiert werden.</small>
 								</label>
 							  </div>
 							  <div class="radio">
 								<label>
 								  <input type="radio" name="rejection_type" value="does_not_meet_requirements">
 								  <strong>Erfüllt Anforderungen nicht</strong><br>
-								  <small>Die schulischen Leistungen der/des Jugendlichen sind für diese Stelle nicht ausreichend</small>
+								  <small>Die schulischen Leistungen der/des Jugendlichen sind für diese Stelle nicht ausreichend.</small>
 								</label>
 							  </div>
 							  <div class="radio">
 								<label>
 								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
 								  <strong>Keine Berufserkundung angeboten</strong><br>
-								  <small>Das Schnuppern für diese Stelle wird nur den Jugendlichen angeboten, die sich auf die entsprechende Lehrstelle bewerben wollen</small>
+								  <small>Das Schnuppern für diese Stelle wird nur den Jugendlichen angeboten, die sich auf die entsprechende Lehrstelle bewerben wollen.</small>
 								</label>
 							  </div>
 							  <div class="radio">
@@ -691,9 +714,47 @@
 							<div class="form-group">
 							  <label for="rejection_explanation" class="col-sm-4 control-label">Zusätzliche Informationen</label>
 							  <div class="col-sm-8">
-								<textarea class="form-control" rows="10" id="rejection_explanation"></textarea>
+								<textarea class="form-control" rows="10" id="additional_information"></textarea>
 							  </div>
 							</div>
+						</div>
+					  </div>
+					  <!-- /.box-body -->
+					</form>
+
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
+					<button type="button" name="search" class="btn btn-default" data-toggle="modal" data-target="#modal-preview-rejection">
+					  <i class="fa fa-eye"></i>&nbsp; Vorschau anzeigen
+					</button>
+					<button type="button" class="btn btn-danger">Bewerbung ablehnen</button>
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+
+			</div>
+			<!-- /.modal -->
+			
+			<div class="modal fade" id="modal-preview-rejection" style="display: none;">
+			  <div class="modal-dialog with-timeline">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">×</span></button>
+					<h4 class="modal-title">Vorschau E-Mail Ablehnung</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="form-horizontal">
+					  <div class="box-body">
+						<div class="col-md-12">
+						<p>Lorem ipsum dolor sit amet</p>
+						<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
+						At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<br><br>
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor<br><br>Sit amet,<br>
+						Mitar Beiter
 						</div>
 					  </div>
 					  <!-- /.box-body -->
@@ -800,7 +861,7 @@
 							  </div>
 							</div>
 							<div class="form-group">
-							  <label for="call_request_message" class="col-sm-2 control-label">Nachricht</label>
+							  <label for="call_request_message" class="col-sm-2 control-label">Zusätzliche Nachricht</label>
 							  <div class="col-sm-10">
 								<textarea class="form-control" rows="3" id="call_request_message"></textarea>
 							  </div>
@@ -813,6 +874,9 @@
 				  </div>
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
+					<button type="button" name="search" class="btn btn-default" data-toggle="modal" data-target="#modal-preview-request-call">
+					  <i class="fa fa-eye"></i>&nbsp; Vorschau anzeigen
+					</button>
 					<button type="button" class="btn btn-warning">Anruf anfordern</button>
 				  </div>
 				</div>
@@ -880,6 +944,9 @@
 				  </div>
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
+					<button type="button" name="search" class="btn btn-default" data-toggle="modal" data-target="#modal-preview-request-file">
+					  <i class="fa fa-eye"></i>&nbsp; Vorschau anzeigen
+					</button>
 					<button type="button" class="btn btn-warning">Dokument anfordern</button>
 				  </div>
 				</div>
@@ -915,6 +982,78 @@
 			</div>
 			<!-- /.modal -->
 			
+
+			<div class="modal fade" id="modal-preview-request-call" style="display: none;">
+			  <div class="modal-dialog with-timeline">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">×</span></button>
+					<h4 class="modal-title">Vorschau E-Mail Anruf anfordern</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="form-horizontal">
+					  <div class="box-body">
+						<div class="col-md-12">
+						<p>Lorem ipsum dolor sit amet</p>
+						<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
+						At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<br><br>
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor<br><br>Sit amet,<br>
+						Mitar Beiter
+						</div>
+					  </div>
+					  <!-- /.box-body -->
+					</form>
+
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
+					<button type="button" class="btn btn-warning">Anruf anfordern</button>
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+
+			</div>
+			<!-- /.modal -->
+
+
+			<div class="modal fade" id="modal-preview-request-file" style="display: none;">
+			  <div class="modal-dialog with-timeline">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">×</span></button>
+					<h4 class="modal-title">Vorschau E-Mail Dokument anfordern</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="form-horizontal">
+					  <div class="box-body">
+						<div class="col-md-12">
+						<p>Lorem ipsum dolor sit amet</p>
+						<p>Consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.<br>
+						At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.<br><br>
+						Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor<br><br>Sit amet,<br>
+						Mitar Beiter
+						</div>
+					  </div>
+					  <!-- /.box-body -->
+					</form>
+
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
+					<button type="button" class="btn btn-warning">Dokument anfordern</button>
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+
+			</div>
+			<!-- /.modal -->
+
 			
           </div>
           <!-- /.box -->
