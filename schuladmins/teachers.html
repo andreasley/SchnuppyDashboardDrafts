@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html style="height: auto; min-height: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Lehrpersonen</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/font-awesome.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/AdminLTE.css">
+  <!-- Schnuppy Skin -->
+  <link rel="stylesheet" href="../assets/skin-schnuppy.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../assets/dataTables.bootstrap.min.css">
+
+
+
+  <link rel="stylesheet" href="../assets/css.css">
+<body class="skin-schnuppy sidebar-mini" style="height: auto; min-height: 100%;">
+<div class="wrapper" style="height: auto; min-height: 100%;">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="https://schnuppy.ch" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img class="sc-c-aspect-ratio-box__img" src="../assets/pen.svg"></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img class="sc-c-aspect-ratio-box__img" src="../assets/logo-white.svg" style="padding:10px;"></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">3</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>maja.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>nico.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Zuweisung<br/>
+                      <small>luca.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../assets/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">hanspeter.muster@schulewehntal.ch</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../assets/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Hanspeter Muster
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="profile.html" class="btn btn-default btn-flat">Profil bearbeiten</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Abmelden</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+      <!-- Sidebar user panel -->
+      <div class="user-panel">
+        <div class="pull-left image">
+          <img src="../assets/school1.jpg" class="img-circle" alt="User Image">
+        </div>
+        <div class="pull-left info">
+          <p>Schule Wehntal</p>
+          <div>
+			  <small class="dropdown" data-toggle="dropdown" aria-expanded="false">Alle Standorte&nbsp; <span class="caret"></span></small>
+			  <ul class="dropdown-menu" role="menu">
+				<li><a href="#">Alle Standorte</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Sekundarschule Schmittenwis</a></li>
+				<li><a href="#">Primarschule Rietli</a></li>
+				<li><a href="#">Primarschule Mammutwis</a></li>
+			  </ul>
+		  </div><br>
+          <div>
+			  <small class="dropdown" data-toggle="dropdown" aria-expanded="false">Alle Klassen&nbsp; <span class="caret"></span></small>
+			  <ul class="dropdown-menu" role="menu">
+				<li><a href="#">Alle Klassen</a></li>
+				<li class="divider"></li>
+				<li><a href="#">Hanspeter Muster</a></li>
+			  </ul>
+		  </div>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="search.html" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu tree" data-widget="tree">
+        <li>
+          <a href="dashboard.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="students.html">
+            <i class="fa fa-users"></i> <span>Jugendliche</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-green">3</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="applications.html">
+            <i class="fa fa-files-o"></i> <span>Bewerbungen</span>
+          </a>
+        </li>
+        <li>
+          <a href="trial-apprenticeships.html">
+            <i class="fa fa-calendar"></i> <span>Schnupperlehren</span>
+          </a>
+        </li>
+        <li class="header">EINSTELLUNGEN</li>
+        <li>
+          <a href="school-profile.html">
+            <i class="fa fa-sliders"></i> <span>Schulprofil</span>
+          </a>
+        </li>
+        <li>
+          <a href="sites.html">
+            <i class="fa fa-building"></i> <span>Standorte</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="teachers.html">
+            <i class="fa fa-user"></i> <span>Lehrpersonen</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 1865px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+		<div class="pull-right">
+		  <a href="#" type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-request-call"><i class="fa fa-plus"></i> Lehrpersonen einladen</a>
+			<div class="modal fade" id="modal-request-call" style="display: none;">
+			  <div class="modal-dialog with-timeline">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">×</span></button>
+					<h4 class="modal-title">Lehrperson einladen</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="form-horizontal">
+					  <div class="box-body">
+						<div class="col-md-12">
+							<div class="form-group">
+							  <label for="call_request_message" class="col-sm-2 control-label">E-Mail</label>
+							  <div class="col-sm-10">
+								<input class="form-control" type="text" name="invitee-email">
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label for="location" class="col-sm-2 control-label">Standort</label>
+							  <div class="col-sm-10">
+								  <select class="form-control" id="location">
+									<option></option>
+									<option>Ganze Schulgemeinde</option>
+									<option>Sekundarschule Niederweningen</option>
+								  </select>
+							  </div>
+							</div>
+							<div class="form-group">
+							  <label for="location" class="col-sm-2 control-label">Zugriffsrechte</label>
+							  <div class="col-sm-10">
+								  <div class="checkbox">
+									<label>
+									  <input type="checkbox" name="permissions" checked="checked" value="employee">
+									  <strong>Lehrperson</strong><br>
+									  <small>Lehrpersonen können von Schülerinnen und Schülern als Klassenlehrperson ausgewählt werden und können Details ihrer Schülerinnen und Schüler einsehen.</small>
+									</label>
+								  </div>
+								  <div class="checkbox">
+									<label>
+									  <input type="checkbox" name="permissions" value="manager">
+									  <strong>Administrator</strong><br>
+									  <small>Administratoren können alle Details für den ausgewählten Standort sehen sowie die Grunddaten anpassen und Lehrpersonen einladen, bearbeiten und löschen.</small>
+									</label>
+								  </div>
+							  </div>
+							</div>
+						</div>
+					  </div>
+					  <!-- /.box-body -->
+					</form>
+
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
+					<button type="button" class="btn btn-success">Einladung per E-Mail verschicken</button>
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+
+			</div>
+			<!-- /.modal -->
+		</div>
+      <h1>
+        Lehrpersonen
+      </h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+    
+      <div class="row">
+        <div class="col-xs-12">
+              <table id="mainTable" class="table table-bordered table-striped box" data-order='[[0, "asc"]]'>
+                <thead>
+                <tr>
+					<th>Name</th>
+					<th>E-Mail</th>
+					<th>Telefon</th>
+					<th>Standort</th>
+					<th>Zugriffsrechte</th>
+					<th>Anzahl SuS</th>
+					<th data-sortable="false"></th>
+                </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+					  <a class="schnuppy-user-block" href="teacher.html">
+						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user5-128x128.jpg" alt="User Image">
+						<span class="username">Nico Beispiel</span>
+					  </a>						
+                    </td>
+                    <td><a href="mailto:nico.beispiel@schulewehntal.ch">nico.beispiel@schulewehntal.ch</a></td>
+                    <td>044 182 41 52</td>
+                    <td>Sekundarschule Niederweningen</td>
+                    <td>Administrator</td>
+                    <td>0</td>
+                    <td><a href="teacher.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+					  <a class="schnuppy-user-block" href="teacher.html">
+						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user1-128x128.jpg" alt="User Image">
+						<span class="username">Samuel Beispiel</span>
+					  </a>						
+                    </td>
+                    <td><a href="mailto:samuel.beispiel@schulewehntal.ch">samuel.beispiel@schulewehntal.ch</a></td>
+                    <td>044 182 41 55</td>
+                    <td>Sekundarschule Niederweningen</td>
+                    <td>Lehrperson</td>
+                    <td>17</td>
+                    <td><a href="teacher.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                  </tr>
+                  <tr>
+                    <td>
+					  <div class="schnuppy-user-block" href="teacher.html">
+						<div class="img-circle img-bordered-sm hidden-xs user-invitation-icon">?</div>
+						<span><strong>Einladung</strong> vom 10.12.2020</span>
+					  </div>						
+                    </td>
+                    <td><a href="mailto:thomas.beispiel@schulewehntal.ch">thomas.beispiel@schulewehntal.ch</a></td>
+                    <td></td>
+                    <td>Sekundarschule Niederweningen</td>
+                    <td>Lehrperson</td>
+                    <td>4</td>
+                    <td><a href="teacher-invitation.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                  </tr>
+                </tbody>
+              </table>
+    	</div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+      
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../assets/jquery.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../assets/bootstrap.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/adminlte.js"></script>
+<!-- DataTables -->
+<script src="../assets/jquery.dataTables.min.js"></script>
+<script src="../assets/dataTables.bootstrap.min.js"></script>
+
+
+
+<!-- page script -->
+<script>
+  
+	var table = $("#mainTable").DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		ordering: true,
+		info: false,
+		autoWidth: false,
+		columns: [
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{},
+			{},
+		]
+    })
+</script>
+
+</body>
+</html>

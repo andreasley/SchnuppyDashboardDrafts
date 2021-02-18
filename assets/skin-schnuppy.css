@@ -227,14 +227,16 @@
 	margin-right: 20px;	
 }
 
-.user-panel.company {
-	overflow: visible;
+.user-panel {
+	overflow: visible !important;
 }
 
 .user-panel>.info {
-	width: 170px;
+	width: 160px;
 	display: block;
 	text-overflow: ellipsis;
+	position: relative;
+	left: 0;
 }
 
 .user-panel>.info>p, .user-panel>.info>small {
