@@ -339,70 +339,29 @@
 		  <div class="box">
 
         	<div class="box-body">
-				<button type="button" class="btn btn-block btn-warning btn-lg" data-toggle="modal" data-target="#modal-cancel">Schnupperlehre absagen</button>
-				<button type="button" class="btn btn-block btn-danger btn-lg" data-toggle="modal" data-target="#modal-alarm">Alarm: Schüler ist nicht erschienen</button>
-				<button type="button" class="btn btn-block btn-default btn-lg" data-toggle="modal" data-target="#modal-alarm">Schüler ist nachträglich erschienen</button>
+				<a type="button" class="btn btn-block btn-danger btn-lg" data-toggle="modal" data-target="#modal-alarm">Alarm: Schüler ist nicht erschienen</a>
             </div>
             <!-- /.box-body -->
-            
-			<div class="modal fade" id="modal-cancel" style="display: none;">
+
+			<div class="modal fade" id="modal-alarm" style="display: none;">
 			  <div class="modal-dialog with-timeline">
 				<div class="modal-content">
 				  <div class="modal-header">
 					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					  <span aria-hidden="true">×</span></button>
-					<h4 class="modal-title">Schnupperbesuch/Schnupperlehre absagen</h4>
+					<h4 class="modal-title">Nichterscheinen melden</h4>
 				  </div>
 				  <div class="modal-body">
 					<form class="form-horizontal">
 					  <div class="box-body">
-						<div class="col-md-6">
-						
-							<div class="form-group">
-							  <div class="radio">
-								<label>
-								  <input type="radio" name="rejection_type" value="occupied">
-								  <strong>Besetzt</strong><br>
-								  <small>Die Schnupperlehrstelle ist doch nicht verfügbar oder bereits vergeben</small>
-								</label>
-							  </div>
-							  <div class="radio">
-								<label>
-								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
-								  <strong>Operationelle Gründe</strong><br>
-								  <small>Die Schnupperlehre kann aus internen Gründen nicht durchgeführt werden.</small>
-								</label>
-							  </div>
-							  <div class="radio">
-								<label>
-								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
-								  <strong>Personalausfall</strong><br>
-								  <small>Die für die Schnupperlehre zuständige Person ist ungeplant nicht verfügbar.</small>
-								</label>
-							  </div>
-							  <div class="radio">
-								<label>
-								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
-								  <strong>Der Bewerbende hat sich krankgemeldet</strong><br>
-								</label>
-							  </div>
-							  <div class="radio">
-								<label>
-								  <input type="radio" name="rejection_type" value="other">
-								  <strong>Andere Gründe</strong>
-								</label>
-							  </div>
-							</div>
-					  		<!-- /.form-group -->
+						<div class="col-md-12">
+							<p>Durch das Auslösen des Alarms werden folgende Parteien automatisch darüber informiert, dass der/die Jugendliche nicht zum vereinbarten Termin erschienen ist:</p>
+							<ul>
+								<li>Schüler/in</li>
+								<li>Lehrperson</li>
+								<li>Eltern</li>
+							</ul>
 							
-						</div>
-						<div class="col-md-6">
-							<div class="form-group">
-							  <label for="rejection_explanation" class="col-sm-4 control-label">Zusätzliche Informationen</label>
-							  <div class="col-sm-8">
-								<textarea class="form-control" rows="10" id="additional_information"></textarea>
-							  </div>
-							</div>
 						</div>
 					  </div>
 					  <!-- /.box-body -->
@@ -411,7 +370,7 @@
 				  </div>
 				  <div class="modal-footer">
 					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
-					<button type="button" class="btn btn-warning">Schnupperlehre absagen</button>
+					<a type="button" class="btn btn-danger" href="trial-apprenticeship-failed.html">Alarm auslösen</a>
 				  </div>
 				</div>
 				<!-- /.modal-content -->
@@ -420,11 +379,13 @@
 
 			</div>
 			<!-- /.modal -->
+            
           </div>
           <!-- /.box -->
 
     	</div>
         <!-- /.col -->
+
 
         <div class="col-md-6">
 		  <div class="box">
@@ -460,7 +421,6 @@
 
     	</div>
         <!-- /.col -->
-
 
 
       </div>

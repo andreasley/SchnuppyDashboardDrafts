@@ -3,7 +3,7 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Schnupperlehren</title>
+  <title>Schnupperlehre von Maja Beispiel</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
@@ -141,7 +141,7 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu tree" data-widget="tree">
-        <li>
+        <li >
           <a href="dashboard.html">
             <i class="fa fa-dashboard"></i> <span>Dashboard</span>
           </a>
@@ -150,10 +150,6 @@
           <a href="trial-apprenticeships.html">
             <i class="fa fa-calendar"></i> <span>Schnupperlehren</span>
           </a>
-		  <ul class="treeview-menu" style="">
-            <li class="active"><a href="trial-apprenticeships.html"><i class="fa fa-circle-o"></i> Offen</a></li>
-            <li><a href="trial-apprenticeships-archive.html"><i class="fa fa-circle-o"></i> Archiv</a></li>
-          </ul>
         </li>
         <li>
           <a href="applications.html">
@@ -194,96 +190,231 @@
   <div class="content-wrapper" style="min-height: 1865px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Offene Schnupperlehren
-      </h1>
+    	<h1>Schnupperlehre</h1>
     </section>
 
     <!-- Main content -->
     <section class="content">
+
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="box box-solid">
+			<div class="box-header with-border">
+			  <h3 class="box-title">Schüler/in</h3>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+			  <a class="schnuppy-user-block" href="student.html">
+				<img class="img-circle img-bordered-sm" src="../assets/user7-128x128.jpg" alt="User Image">
+				<span class="username">Maja Beispiel</span>
+			  </a>						
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+		</div>
+		<!-- ./col -->
+
+		<div class="col-md-6">
+		  <div class="box box-solid">
+			<div class="box-header with-border">
+			  <h3 class="box-title">Inserat</h3>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+				<a href="inserat.html">Elektroinstallateur/in EFZ</a>
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+		</div>
+		<!-- ./col -->
+
+	  </div>
+	  <!-- ./row -->
     
+
       <div class="row">
-        <div class="col-xs-12">
-              <table id="mainTable" class="table table-bordered table-striped box" data-order='[[1, "desc"]]'>
-                <thead>
-                <tr>
-					<th>Name</th>
-					<th>Datum</th>
-					<th class="hidden-xs">Typ</th>
-					<th class="hidden-xs">Stelle</th>
-					<th data-sortable="false">Standort</th>
-					<th>Status</th>
-					<th></th>
-                </tr>
-                </thead>
-                <tbody>
+        <div class="col-md-6">
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Details</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
                   <tr>
-                    <td>
-					  <a class="schnuppy-user-block" href="student.html">
-						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user5-128x128.jpg" alt="User Image">
-						<span class="username">Nico Beispiel</span>
-					  </a>						
-                    </td>
-                    <td data-sort="2020-10-01">01.10.2020&nbsp;- 02.10.2020</td>
-                    <td class="hidden-xs">Schnupperlehre (2 Tage)</td>
-                    <td data-sort="Systemgastronomiefachmann/-frau EFZ" class="hidden-xs"><a href="vacancy.html">Systemgastronomiefachmann/-frau EFZ</a></td>
-                    <td>Hauptsitz</td>
-					<td data-sort="100"><span class="badge bg-blue">Laufend</span></td>
-                    <td><a href="trial-apprenticeship-current.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                    <th>Status</th>
+                    <td><span class="badge bg-red">Nicht erschienen</span></td>
                   </tr>
                   <tr>
-                    <td>
-					  <a class="schnuppy-user-block" href="student.html">
-						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user1-128x128.jpg" alt="User Image">
-						<span class="username">Samuel Beispiel</span>
-					  </a>						
-                    </td>
-                    <td data-sort="2020-09-07">07.09.2020</td>
-                    <td class="hidden-xs">Schnupperbesuch</td>
-                    <td data-sort="Elektroinstallateur/in EFZ" class="hidden-xs"><a href="vacancy.html">Elektroinstallateur/in EFZ</a></td>
-                    <td>Produktion</td>
-					<td data-sort="100"><span class="badge">Bevorstehend</span></td>
-                    <td><a href="trial-apprenticeship-upcoming.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                    <th>Datum</th>
+                    <td>07.10.2020&nbsp;- 08.10.2020</td>
                   </tr>
                   <tr>
-                    <td>
-					  <a class="schnuppy-user-block" href="student.html">
-						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user6-128x128.jpg" alt="User Image">
-						<span class="username">Thomas Beispiel</span>
-					  </a>						
-                    </td>
-                    <td data-sort="2020-09-21">21.09.2020&nbsp;- 22.09.2020</td>
-                    <td class="hidden-xs">Schnupperlehre (2 Tage)</td>
-                    <td data-sort="Florist/in EFZ" class="hidden-xs"><a href="vacancy.html">Florist/in EFZ</a></td>
-                    <td>Hauptsitz</td>
-					<td data-sort="100"><span class="badge bg-yellow">Abgesagt</span></td>
-                    <td><a href="trial-apprenticeship-cancelled.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                    <th>Typ</th>
+                    <td>Schnupperlehre (2 Tage)</td>
                   </tr>
                   <tr>
-                    <td>
-					  <a class="schnuppy-user-block" href="student.html">
-						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user3-128x128.jpg" alt="User Image">
-						<span class="username">Robert Beispiel</span>
-					  </a>						
-                    </td>
-                    <td data-sort="2020-09-21">21.09.2020&nbsp;- 22.09.2020</td>
-                    <td class="hidden-xs">Schnupperlehre (2 Tage)</td>
-                    <td data-sort="Florist/in EFZ" class="hidden-xs"><a href="vacancy.html">Florist/in EFZ</a></td>
-                    <td>Hauptsitz</td>
-					<td data-sort="100"><span class="badge bg-red">Nicht erschienen</span></td>
-                    <td><a href="trial-apprenticeship-failed.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
+                    <th>Bewerbung</th>
+                    <td><a href="application.html">Bewerbung vom 30.09.2020</a></td>
                   </tr>
-                </tbody>
-              </table>
+                  <tr>
+                    <th>Standort</th>
+                    <td>
+                      Hauptstandort<br>
+                      Zentralstrasse 123<br>
+                      8901 Mitteldorf<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Zeit</th>
+                    <td>09:00</td>
+                  </tr>
+                  <tr>
+                    <th>Treffpunkt</th>
+                    <td>Haupteingang (melde dich am Empfang)</td>
+                  </tr>
+                  <tr>
+                    <th>Zusätzliche Informationen</th>
+                    <td>
+                      Warme Kleider anziehen!<br>
+                      Für Verpflegung ist gesorgt.
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
     	</div>
         <!-- /.col -->
+
+        <div class="col-md-6">
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Ansprechsperson</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>Name</th>
+                    <td>Franz Glauser</td>
+                  </tr>
+                  <tr>
+                    <th>E-Mail</th>
+                    <td><a href="mailto:franz.glauser@testfirma.ch">franz.glauser@testfirma.ch</a></td>
+                  </tr>
+                  <tr>
+                    <th>Telefon</th>
+                    <td>079 234 56 78</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
+        <div class="col-md-6">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Nichterscheinen</h3>
+            </div>
+
+        	<div class="box-body">
+        		<p>Alarm ausgelöst durch Firma am 24.02.2021 um 22:12 Uhr</p>
+				<a type="button" class="btn btn-block btn-danger" href="trial-apprenticeship-current.html">Alarm deaktivieren: Schüler ist nachträglich erschienen</a>
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
+        <div class="col-md-6">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Interne Bewertung</h3>
+            </div>
+            <!-- /.box-header -->
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>Bewertung durch Firma</th>
+                    <td>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star-o"></i>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+				<textarea class="form-control" rows="6" name="description"></textarea>
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
       </div>
       <!-- /.row -->
 
-	  <div>
-  	    <button class="btn btn-default pull-right hidden-xs">Archivierte Schnupperlehren anzeigen</button>
-	  </div>
-	  <!-- /.row -->
+	  <div class="fixed-bottom-spacer"></div>
+	  
+	  <div class="fixed-bottom-bar">
+
+        <div class="col-md-12">
+			<div class="pull-right spaced-button-row">
+				<button type="button" name="search" class="btn btn-default">
+				  <i class="fa fa-eye"></i>&nbsp; Vorschau anzeigen
+				</button>
+				<button type="button" name="search" class="btn btn-success">
+				  Speichern
+				</button>
+			</div>
+			<button type="button" name="search" class="btn btn-danger">
+			  Löschen
+			</button>
+    	</div>
+        <!-- /.col -->
+
+      </div>
+	  <!-- ./fixed-bottom-bar -->
 
       
     </section>
@@ -309,7 +440,7 @@
 <!-- page script -->
 <script>
   
-	var table = $("#mainTable").DataTable({
+	var trialApprenticeshipsTable = $("#trialApprenticeshipsTable").DataTable({
 		paging: false,
 		lengthChange: false,
 		searching: false,
@@ -319,13 +450,29 @@
 		columns: [
 			{ orderSequence: [ "asc", "desc" ] },
 			{ orderSequence: [ "asc", "desc" ] },
-			{ orderSequence: [ "asc", "desc" ] },
 			{ orderSequence: [ "desc", "asc" ] },
 			{ orderSequence: [ "desc", "asc" ] },
 			{ orderSequence: [ "desc", "asc" ] },
 			{ orderSequence: [ "desc", "asc" ] },
 		]
     })
+
+	var applicationsTable = $("#applicationsTable").DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		ordering: true,
+		info: false,
+		autoWidth: false,
+		columns: [
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+		]
+    })
+
 </script>
 
 </body>

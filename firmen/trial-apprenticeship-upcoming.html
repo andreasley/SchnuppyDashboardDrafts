@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html style="height: auto; min-height: 100%;"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Schnupperlehre von Maja Beispiel</title>
+  <!-- Tell the browser to be responsive to screen width -->
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <!-- Bootstrap 3.3.7 -->
+  <link rel="stylesheet" href="../assets/bootstrap.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../assets/font-awesome.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../assets/AdminLTE.css">
+  <!-- Schnuppy Skin -->
+  <link rel="stylesheet" href="../assets/skin-schnuppy.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="../assets/dataTables.bootstrap.min.css">
+
+
+
+  <link rel="stylesheet" href="../assets/css.css">
+<body class="skin-schnuppy sidebar-mini" style="height: auto; min-height: 100%;">
+<div class="wrapper" style="height: auto; min-height: 100%;">
+
+  <header class="main-header">
+
+    <!-- Logo -->
+    <a href="https://schnuppy.ch" class="logo">
+      <!-- mini logo for sidebar mini 50x50 pixels -->
+      <span class="logo-mini"><img class="sc-c-aspect-ratio-box__img" src="../assets/pen.svg"></span>
+      <!-- logo for regular state and mobile devices -->
+      <span class="logo-lg"><img class="sc-c-aspect-ratio-box__img" src="../assets/logo-white.svg" style="padding:10px;"></span>
+    </a>
+
+    <!-- Header Navbar: style can be found in header.less -->
+    <nav class="navbar navbar-static-top">
+      <!-- Sidebar toggle button-->
+      <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
+        <span class="sr-only">Toggle navigation</span>
+      </a>
+      <!-- Navbar Right Menu -->
+      <div class="navbar-custom-menu">
+        <ul class="nav navbar-nav">
+          <!-- Notifications: style can be found in dropdown.less -->
+          <li class="dropdown notifications-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <i class="fa fa-bell-o"></i>
+              <span class="label label-warning">3</span>
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <!-- inner menu: contains the actual data -->
+                <ul class="menu">
+                  <li>
+                    <a href="application.html">
+                      <i class="fa fa-user"></i> Neue Bewerbung<br/>
+                      <small>maja.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="application.html">
+                      <i class="fa fa-user"></i> Bewerbung zurückgezogen<br/>
+                      <small>nico.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="student.html">
+                      <i class="fa fa-user"></i> Neue Bewerbung<br/>
+                      <small>luca.beispiel@wehntal.schule</small>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <!-- User Account: style can be found in dropdown.less -->
+          <li class="dropdown user user-menu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              <img src="../assets/user2-160x160.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">mitar.beiter@testfirma.ch</span>
+            </a>
+            <ul class="dropdown-menu">
+              <!-- User image -->
+              <li class="user-header">
+                <img src="../assets/user2-160x160.jpg" class="img-circle" alt="User Image">
+
+                <p>
+                  Mitar Beiter
+                </p>
+              </li>
+              <!-- Menu Footer-->
+              <li class="user-footer">
+                <div class="pull-left">
+                  <a href="profile.html" class="btn btn-default btn-flat">Profil bearbeiten</a>
+                </div>
+                <div class="pull-right">
+                  <a href="#" class="btn btn-default btn-flat">Abmelden</a>
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  
+  <!-- Left side column. contains the logo and sidebar -->
+  <aside class="main-sidebar">
+    <!-- sidebar: style can be found in sidebar.less -->
+    <section class="sidebar" style="height: auto;">
+      <!-- Sidebar user panel -->
+      <div class="user-panel company">
+        <div class="pull-left image">
+          <img src="../assets/companylogo2.png" alt="Company Logo">
+        </div>
+        <div class="pull-left info">
+          <p>Testfirma GmbH</p>
+          <small class="dropdown" data-toggle="dropdown" aria-expanded="false">Alle Standorte <span class="caret"></span></small>
+		  <ul class="dropdown-menu" role="menu">
+			<li><a href="#">Alle Standorte</a></li>
+			<li class="divider"></li>
+			<li><a href="#">Hauptsitz</a></li>
+			<li><a href="#">Produktion</a></li>
+			<li><a href="#">Showroom</a></li>
+		  </ul>
+        </div>
+      </div>
+      <!-- search form -->
+      <form action="search.html" method="get" class="sidebar-form">
+        <div class="input-group">
+          <input type="text" name="q" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+                <button type="submit" name="search" id="search-btn" class="btn btn-flat">
+                  <i class="fa fa-search"></i>
+                </button>
+              </span>
+        </div>
+      </form>
+      <!-- /.search form -->
+      <!-- sidebar menu: : style can be found in sidebar.less -->
+      <ul class="sidebar-menu tree" data-widget="tree">
+        <li >
+          <a href="dashboard.html">
+            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="trial-apprenticeships.html">
+            <i class="fa fa-calendar"></i> <span>Schnupperlehren</span>
+          </a>
+        </li>
+        <li>
+          <a href="applications.html">
+            <i class="fa fa-files-o"></i> <span>Bewerbungen</span>
+            <span class="pull-right-container">
+              <small class="label pull-right bg-yellow">2</small>
+            </span>
+          </a>
+        </li>
+        <li>
+          <a href="vacancies.html">
+            <i class="fa fa-folder-open-o"></i> <span>Inserate</span>
+          </a>
+        </li>
+        <li class="header">EINSTELLUNGEN</li>
+        <li>
+          <a href="company-profile.html">
+            <i class="fa fa-sliders"></i> <span>Firmenprofil</span>
+          </a>
+        </li>
+        <li>
+          <a href="sites.html">
+            <i class="fa fa-building"></i> <span>Standorte</span>
+          </a>
+        </li>
+        <li>
+          <a href="employees.html">
+            <i class="fa fa-user"></i> <span>Mitarbeiter</span>
+          </a>
+        </li>
+        
+      </ul>
+    </section>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper" style="min-height: 1865px;">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+    	<h1>Schnupperlehre</h1>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+	  <div class="row">
+		<div class="col-md-6">
+		  <div class="box box-solid">
+			<div class="box-header with-border">
+			  <h3 class="box-title">Schüler/in</h3>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+			  <a class="schnuppy-user-block" href="student.html">
+				<img class="img-circle img-bordered-sm" src="../assets/user7-128x128.jpg" alt="User Image">
+				<span class="username">Maja Beispiel</span>
+			  </a>						
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+		</div>
+		<!-- ./col -->
+
+		<div class="col-md-6">
+		  <div class="box box-solid">
+			<div class="box-header with-border">
+			  <h3 class="box-title">Inserat</h3>
+			</div>
+			<!-- /.box-header -->
+			<div class="box-body">
+				<a href="inserat.html">Elektroinstallateur/in EFZ</a>
+			</div>
+			<!-- /.box-body -->
+		  </div>
+		  <!-- /.box -->
+		</div>
+		<!-- ./col -->
+
+	  </div>
+	  <!-- ./row -->
+    
+
+      <div class="row">
+        <div class="col-md-6">
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Details</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>Status</th>
+                    <td><span class="badge">Bevorstehend</span></td>
+                  </tr>
+                  <tr>
+                    <th>Datum</th>
+                    <td>07.10.2020&nbsp;- 08.10.2020</td>
+                  </tr>
+                  <tr>
+                    <th>Typ</th>
+                    <td>Schnupperlehre (2 Tage)</td>
+                  </tr>
+                  <tr>
+                    <th>Bewerbung</th>
+                    <td><a href="application.html">Bewerbung vom 30.09.2020</a></td>
+                  </tr>
+                  <tr>
+                    <th>Standort</th>
+                    <td>
+                      Hauptstandort<br>
+                      Zentralstrasse 123<br>
+                      8901 Mitteldorf<br>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Zeit</th>
+                    <td>09:00</td>
+                  </tr>
+                  <tr>
+                    <th>Treffpunkt</th>
+                    <td>Haupteingang (melde dich am Empfang)</td>
+                  </tr>
+                  <tr>
+                    <th>Zusätzliche Informationen</th>
+                    <td>
+                      Warme Kleider anziehen!<br>
+                      Für Verpflegung ist gesorgt.
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+        <div class="col-md-6">
+		  <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Ansprechsperson</h3>
+            </div>
+            <!-- /.box-header -->
+
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>Name</th>
+                    <td>Franz Glauser</td>
+                  </tr>
+                  <tr>
+                    <th>E-Mail</th>
+                    <td><a href="mailto:franz.glauser@testfirma.ch">franz.glauser@testfirma.ch</a></td>
+                  </tr>
+                  <tr>
+                    <th>Telefon</th>
+                    <td>079 234 56 78</td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+            </div>
+            <!-- /.box-body -->
+            
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
+        <div class="col-md-6">
+		  <div class="box">
+
+        	<div class="box-body">
+				<button type="button" class="btn btn-block btn-warning btn-lg" data-toggle="modal" data-target="#modal-cancel">Schnupperlehre absagen</button>
+            </div>
+            <!-- /.box-body -->
+            
+			<div class="modal fade" id="modal-cancel" style="display: none;">
+			  <div class="modal-dialog with-timeline">
+				<div class="modal-content">
+				  <div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					  <span aria-hidden="true">×</span></button>
+					<h4 class="modal-title">Schnupperbesuch/Schnupperlehre absagen</h4>
+				  </div>
+				  <div class="modal-body">
+					<form class="form-horizontal">
+					  <div class="box-body">
+						<div class="col-md-6">
+						
+							<div class="form-group">
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="occupied">
+								  <strong>Besetzt</strong><br>
+								  <small>Die Schnupperlehrstelle ist doch nicht verfügbar oder bereits vergeben</small>
+								</label>
+							  </div>
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
+								  <strong>Operationelle Gründe</strong><br>
+								  <small>Die Schnupperlehre kann aus internen Gründen nicht durchgeführt werden.</small>
+								</label>
+							  </div>
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
+								  <strong>Personalausfall</strong><br>
+								  <small>Die für die Schnupperlehre zuständige Person ist ungeplant nicht verfügbar.</small>
+								</label>
+							  </div>
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="for_potential_apprentices_only">
+								  <strong>Der Bewerbende hat sich krankgemeldet</strong><br>
+								</label>
+							  </div>
+							  <div class="radio">
+								<label>
+								  <input type="radio" name="rejection_type" value="other">
+								  <strong>Andere Gründe</strong>
+								</label>
+							  </div>
+							</div>
+					  		<!-- /.form-group -->
+							
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+							  <label for="rejection_explanation" class="col-sm-4 control-label">Zusätzliche Informationen</label>
+							  <div class="col-sm-8">
+								<textarea class="form-control" rows="10" id="additional_information"></textarea>
+							  </div>
+							</div>
+						</div>
+					  </div>
+					  <!-- /.box-body -->
+					</form>
+
+				  </div>
+				  <div class="modal-footer">
+					<button type="button" class="btn btn-default pull-left" data-dismiss="modal">Abbrechen</button>
+					<a type="button" class="btn btn-warning" href="trial-apprenticeship-cancelled.html">Schnupperlehre absagen</a>
+				  </div>
+				</div>
+				<!-- /.modal-content -->
+			  </div>
+			  <!-- /.modal-dialog -->
+
+			</div>
+			<!-- /.modal -->
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
+        <div class="col-md-6">
+		  <div class="box">
+
+            <div class="box-header">
+              <h3 class="box-title">Interne Bewertung</h3>
+            </div>
+            <!-- /.box-header -->
+        	<div class="box-body">
+              <div class="table-responsive">
+                <table class="table no-margin">
+                  <tbody>
+                  <tr>
+                    <th>Bewertung durch Firma</th>
+                    <td>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star"></i>
+					  <i class="fa fa-star-o"></i>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.table-responsive -->
+				<textarea class="form-control" rows="6" name="description"></textarea>
+            </div>
+            <!-- /.box-body -->
+
+          </div>
+          <!-- /.box -->
+
+    	</div>
+        <!-- /.col -->
+
+
+      </div>
+      <!-- /.row -->
+
+	  <div class="fixed-bottom-spacer"></div>
+	  
+	  <div class="fixed-bottom-bar">
+
+        <div class="col-md-12">
+			<div class="pull-right spaced-button-row">
+				<button type="button" name="search" class="btn btn-default">
+				  <i class="fa fa-eye"></i>&nbsp; Vorschau anzeigen
+				</button>
+				<button type="button" name="search" class="btn btn-success">
+				  Speichern
+				</button>
+			</div>
+			<button type="button" name="search" class="btn btn-danger">
+			  Löschen
+			</button>
+    	</div>
+        <!-- /.col -->
+
+      </div>
+	  <!-- ./fixed-bottom-bar -->
+
+      
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery 3 -->
+<script src="../assets/jquery.js"></script>
+<!-- Bootstrap 3.3.7 -->
+<script src="../assets/bootstrap.js"></script>
+<!-- AdminLTE App -->
+<script src="../assets/adminlte.js"></script>
+<!-- DataTables -->
+<script src="../assets/jquery.dataTables.min.js"></script>
+<script src="../assets/dataTables.bootstrap.min.js"></script>
+
+
+
+<!-- page script -->
+<script>
+  
+	var trialApprenticeshipsTable = $("#trialApprenticeshipsTable").DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		ordering: true,
+		info: false,
+		autoWidth: false,
+		columns: [
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+		]
+    })
+
+	var applicationsTable = $("#applicationsTable").DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		ordering: true,
+		info: false,
+		autoWidth: false,
+		columns: [
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+		]
+    })
+
+</script>
+
+</body>
+</html>
