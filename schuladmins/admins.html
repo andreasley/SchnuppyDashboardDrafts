@@ -3,28 +3,24 @@
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Firmenprofil</title>
+  <title>Schuladmins</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="../assets/bootstrap.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="../assets/font-awesome.css">
-  <!-- Select2 -->
-  <link rel="stylesheet" href="../assets/select2.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../assets/AdminLTE.css">
   <!-- Schnuppy Skin -->
   <link rel="stylesheet" href="../assets/skin-schnuppy.css">
   <!-- DataTables -->
   <link rel="stylesheet" href="../assets/dataTables.bootstrap.min.css">
-  <!-- bootstrap wysihtml5 - text editor -->
-  <link rel="stylesheet" href="../assets/bootstrap3-wysihtml5.min.css">
 
 
 
   <link rel="stylesheet" href="../assets/css.css">
-<body class="skin-schnuppy sidebar-mini site-detail" style="height: auto; min-height: 100%;">
+<body class="skin-schnuppy sidebar-mini" style="height: auto; min-height: 100%;">
 <div class="wrapper" style="height: auto; min-height: 100%;">
 
   <header class="main-header">
@@ -108,7 +104,6 @@
       </div>
     </nav>
   </header>
-
   
   
   <!-- Left side column. contains the logo and sidebar -->
@@ -180,11 +175,6 @@
           </a>
         </li>
         <li class="header">EINSTELLUNGEN</li>
-        <li class="active">
-          <a href="school-profile.html">
-            <i class="fa fa-sliders"></i> <span>Schulprofil</span>
-          </a>
-        </li>
         <li>
           <a href="sites.html">
             <i class="fa fa-building"></i> <span>Schulhäuser</span>
@@ -195,7 +185,7 @@
             <i class="fa fa-user"></i> <span>Lehrpersonen</span>
           </a>
         </li>
-        <li>
+        <li class="active">
           <a href="admins.html">
             <i class="fa fa-user"></i> <span>Schuladmins</span>
           </a>
@@ -204,234 +194,51 @@
     </section>
     <!-- /.sidebar -->
   </aside>
-  
+
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper" style="min-height: 1865px;">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-    	<h1>Profil Schulgemeinde/Schulgruppe</h1>
+      <h1>
+        Schuladmins
+      </h1>
     </section>
 
     <!-- Main content -->
     <section class="content">
-
+    
       <div class="row">
-        <div class="col-md-12">
-		  <div class="box">
-
-            <div class="box-header">
-              <h3 class="box-title">Grunddaten</h3>
-            </div>
-            <!-- /.box-header -->
-
-        	<div class="box-body">
-
-				<form class="form-horizontal">
-	
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Name *</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="name" value="Schule Wehntal">
-					  </div>
-					</div>
-					
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">BISTA-Code</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="name" value="M282">
-					  </div>
-					</div>
-	
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Webseite *</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="name" value="https://www.schulewehntal.ch">
-					  </div>
-					</div>
-
-					<div class="form-group">
-					  <label for="location" class="col-sm-4 control-label">Logo</label>
-					  <div class="col-sm-8">
-					  	<img src="../assets/school1.jpg" style="max-width: 200px; max-height: 60px;">
-						<input type="file" id="logo">
-					  </div>
-					</div>
-
-					<div class="form-group">
-					  <label for="location" class="col-sm-4 control-label">Header-Bild</label>
-					  <div class="col-sm-8">
-						<input type="file" id="header_image">
-					  </div>
-					</div>
-
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Video</label>
-					  <div class="col-sm-8">
-						<input type="file" id="video">
-					  </div>
-					</div>
-
-					<div class="form-group">
-					  <label for="location" class="col-sm-4 control-label">Beschreibung</label>
-					  <div class="col-sm-8">
-						  <textarea class="form-control wysiwyg" rows="6" name="description"></textarea>
-					  </div>
-					</div>
-
-				</form>
-
-            </div>
-            <!-- /.box-body -->
-
-          </div>
-          <!-- /.box -->
-
-    	</div>
-        <!-- /.col -->
-
-
-      </div>
-	  <!-- ./row -->
-
-
-      <div class="row">
-        <div class="col-md-12">
-		  <div class="box">
-
-            <div class="box-header">
-              <h3 class="box-title">Verantwortliche Person</h3>
-              <p>für diese Schulgemeinde/Schulgruppe/Schulkreis</p>
-            </div>
-            <!-- /.box-header -->
-
-        	<div class="box-body">
-
-				<form class="form-horizontal">
-	
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Anrede *</label>
-					  <div class="col-sm-8">
-						<select class="form-control" id="salutation">
-						  <option></option>
-						  <option selected="selected">Herr</option>
-						  <option>Frau</option>
-						</select>
-					  </div>
-					</div>
-
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Vorname *</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="firstname" value="Samuel">
-					  </div>
-					</div>
-					
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Nachname *</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="lastname" value="Beispiel">
-					  </div>
-					</div>
-	
-					<div class="form-group">
-					  <label for="location" class="col-sm-4 control-label">Profilbild</label>
-					  <div class="col-sm-8">
-						<input type="file" id="picture">
-					  </div>
-					</div>
-					
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Abteilung/Funktion *</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="department" value="Schulverwatung">
-					  </div>
-					</div>
-
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Telefon (Festnetz)</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="phone" value="044 182 41 55">
-					  </div>
-					</div>
-					
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">Telefon (Mobil)</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="mobile" value="079 471 23 41">
-					  </div>
-					</div>
-
-					<div class="form-group">
-					  <label for="name" class="col-sm-4 control-label">E-Mail *</label>
-					  <div class="col-sm-8">
-						  <input class="form-control" type="text" name="email" value="samuel.beispiel@schulewehntal.ch">
-					  </div>
-					</div>
-
-				</form>
-
-            </div>
-            <!-- /.box-body -->
-
-          </div>
-          <!-- /.box -->
-
-    	</div>
-        <!-- /.col -->
-
-
-      </div>
-	  <!-- ./row -->
-
-      <div class="row">
-        <div class="col-md-12">
-		  <div class="box">
-
-            <div class="box-header">
-              <h3 class="box-title">Schnuppy-Details</h3>
-            </div>
-            <!-- /.box-header -->
-
-        	<div class="box-body">
-              <div class="table-responsive">
-                <table class="table no-margin">
-                  <tbody>
+        <div class="col-xs-12">
+              <table id="mainTable" class="table table-bordered table-striped box" data-order='[[0, "asc"]]'>
+                <thead>
+                <tr>
+					<th>Name</th>
+					<th>E-Mail</th>
+					<th>Telefon</th>
+					<th>Schulhaus</th>
+					<th data-sortable="false"></th>
+                </tr>
+                </thead>
+                <tbody>
                   <tr>
-                    <th class="col-md-4">Schnuppy-Region</th>
-                    <td>Dielsdorf</td>
+                    <td>
+					  <a class="schnuppy-user-block" href="admin.html">
+						<img class="img-circle img-bordered-sm hidden-xs" src="../assets/user5-128x128.jpg" alt="User Image">
+						<span class="username">Nico Beispiel</span>
+					  </a>						
+                    </td>
+                    <td><a href="mailto:nico.beispiel@schulewehntal.ch">nico.beispiel@schulewehntal.ch</a></td>
+                    <td>044 182 41 52</td>
+                    <td>Sekundarschule Niederweningen</td>
+                    <td><a href="admin.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
                   </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- /.table-responsive -->
-            </div>
-            <!-- /.box-body -->
-
-          </div>
-          <!-- /.box -->
-
+                </tbody>
+              </table>
+              <small>Um Schuladmins für Ihre Schule hinzuzufügen, kontaktieren Sie bitte info@schnuppy.ch.</small>
     	</div>
         <!-- /.col -->
-
-
       </div>
-	  <!-- ./row -->
-
-	  <div class="fixed-bottom-spacer"></div>
-
-	  <div class="fixed-bottom-bar">
-
-        <div class="col-md-12">
-			<div class="pull-right spaced-button-row">
-				<button type="button" name="search" class="btn btn-success">
-				  Speichern
-				</button>
-			</div>
-    	</div>
-        <!-- /.col -->
-
-      </div>
-	  <!-- ./fixed-bottom-bar -->
+      <!-- /.row -->
       
     </section>
     <!-- /.content -->
@@ -445,38 +252,33 @@
 <script src="../assets/jquery.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../assets/bootstrap.js"></script>
-<!-- Select2 -->
-<script src="../assets/select2.full.min.js"></script><!-- AdminLTE App -->
+<!-- AdminLTE App -->
 <script src="../assets/adminlte.js"></script>
 <!-- DataTables -->
 <script src="../assets/jquery.dataTables.min.js"></script>
 <script src="../assets/dataTables.bootstrap.min.js"></script>
-<!-- Bootstrap WYSIHTML5 -->
-<script src="../assets/bootstrap3-wysihtml5.all.min.js"></script>
-
 
 
 
 <!-- page script -->
 <script>
   
-    //Initialize Select2 Elements
-    $('.select2').select2()
-
-	$('textarea.wysiwyg').wysihtml5({
-	  toolbar: {
-		"font-styles": false, // Font styling, e.g. h1, h2, etc.
-		"emphasis": true, // Italics, bold, etc.
-		"lists": true, // (Un)ordered lists, e.g. Bullets, Numbers.
-		"html": false, // Button which allows you to edit the generated HTML.
-		"link": true, // Button to insert a link.
-		"image": false, // Button to insert an image.
-		"color": false, // Button to change color of font
-		"blockquote": false, // Blockquote
-		"size": "xs" // options are xs, sm, lg
-	  }
-	});
-
+	var table = $("#mainTable").DataTable({
+		paging: false,
+		lengthChange: false,
+		searching: false,
+		ordering: true,
+		info: false,
+		autoWidth: false,
+		columns: [
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "asc", "desc" ] },
+			{ orderSequence: [ "desc", "asc" ] },
+			{},
+			{},
+		]
+    })
 </script>
 
 </body>

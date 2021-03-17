@@ -176,11 +176,6 @@
         </li>
         <li class="header">EINSTELLUNGEN</li>
         <li>
-          <a href="school-profile.html">
-            <i class="fa fa-sliders"></i> <span>Schulprofil</span>
-          </a>
-        </li>
-        <li>
           <a href="sites.html">
             <i class="fa fa-building"></i> <span>Schulhäuser</span>
           </a>
@@ -188,6 +183,11 @@
         <li class="active">
           <a href="teachers.html">
             <i class="fa fa-user"></i> <span>Lehrpersonen</span>
+          </a>
+        </li>
+        <li>
+          <a href="admins.html">
+            <i class="fa fa-user"></i> <span>Schuladmins</span>
           </a>
         </li>
       </ul>
@@ -224,28 +224,8 @@
 							  <div class="col-sm-10">
 								  <select class="form-control" id="location">
 									<option></option>
-									<option>Ganze Schulgemeinde</option>
 									<option>Sekundarschule Niederweningen</option>
 								  </select>
-							  </div>
-							</div>
-							<div class="form-group">
-							  <label for="location" class="col-sm-2 control-label">Zugriffsrechte</label>
-							  <div class="col-sm-10">
-								  <div class="checkbox">
-									<label>
-									  <input type="checkbox" name="permissions" checked="checked" value="employee">
-									  <strong>Lehrperson</strong><br>
-									  <small>Lehrpersonen können von Schülerinnen und Schülern als Klassenlehrperson ausgewählt werden und können Details ihrer Schülerinnen und Schüler einsehen.</small>
-									</label>
-								  </div>
-								  <div class="checkbox">
-									<label>
-									  <input type="checkbox" name="permissions" value="manager">
-									  <strong>Administrator</strong><br>
-									  <small>Administratoren können alle Details für das ausgewählte Schulhaus sehen sowie die Grunddaten anpassen und Lehrpersonen einladen, bearbeiten und löschen.</small>
-									</label>
-								  </div>
 							  </div>
 							</div>
 						</div>
@@ -283,7 +263,6 @@
 					<th>E-Mail</th>
 					<th>Telefon</th>
 					<th>Schulhaus</th>
-					<th>Zugriffsrechte</th>
 					<th>Anzahl SuS</th>
 					<th data-sortable="false"></th>
                 </tr>
@@ -299,8 +278,7 @@
                     <td><a href="mailto:nico.beispiel@schulewehntal.ch">nico.beispiel@schulewehntal.ch</a></td>
                     <td>044 182 41 52</td>
                     <td>Sekundarschule Niederweningen</td>
-                    <td>Administrator</td>
-                    <td>0</td>
+                    <td>2</td>
                     <td><a href="teacher.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
                   </tr>
                   <tr>
@@ -313,7 +291,6 @@
                     <td><a href="mailto:samuel.beispiel@schulewehntal.ch">samuel.beispiel@schulewehntal.ch</a></td>
                     <td>044 182 41 55</td>
                     <td>Sekundarschule Niederweningen</td>
-                    <td>Lehrperson</td>
                     <td>17</td>
                     <td><a href="teacher.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
                   </tr>
@@ -327,7 +304,6 @@
                     <td><a href="mailto:thomas.beispiel@schulewehntal.ch">thomas.beispiel@schulewehntal.ch</a></td>
                     <td></td>
                     <td>Sekundarschule Niederweningen</td>
-                    <td>Lehrperson</td>
                     <td>4</td>
                     <td><a href="teacher-invitation.html" class="btn btn-sm btn-default pull-right">Details anzeigen</a></td>
                   </tr>
